@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FE Trending Clusters</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="fe-header">
+    <div class="topbar">
+      <div class="brand-wrap" aria-label="Financial Express">
+        <span class="fe-logo-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-text">
+          <strong>FINANCIAL EXPRESS</strong>
+          <em>Read to Lead</em>
+        </span>
+      </div>
+      <button class="watchlist" type="button">WATCHLIST</button>
+      <span class="user-circle" aria-hidden="true"></span>
+    </div>
+
+    <nav class="blue-nav" aria-label="Financial Express menu">
+      <div class="blue-nav-inner">
+        <button class="hamburger" type="button" aria-label="Menu"><span></span><span></span><span></span></button>
+        <a href="#">BUSINESS</a>
+        <a href="#">MARKETS</a>
+        <a href="#">MARKET STATS</a>
+        <a href="#">MUTUAL FUNDS</a>
+        <a href="#">MONEY</a>
+        <a href="#">INDIA NEWS</a>
+        <a href="#">TECH</a>
+        <a href="#">US NEWS</a>
+        <a href="#">SHORTS</a>
+        <a href="#">EPAPER</a>
+        <button class="quote" type="button"><span class="magnify"></span> GET QUOTE</button>
+      </div>
+    </nav>
+
+    <section class="cluster-strip" aria-label="Trending topic chips">
+      <div class="cluster-strip-inner" id="clusterChips"></div>
+    </section>
+  </header>
+
+  <main class="content-wrap">
+    <section class="cluster-detail-card">
+      <div class="detail-head">
+        <div>
+          <p class="label">FE TRENDING CLUSTERS</p>
+          <h1 id="selectedTitle">Loading trending clusters...</h1>
+          <p id="selectedDescription">Recent Financial Express stories grouped into quick topic chips from the last 2-3 days.</p>
+        </div>
+        <div class="actions">
+          <button id="refreshBtn" type="button">Refresh</button>
+          <p id="statusLine">Loading API...</p>
+        </div>
+      </div>
+      <div class="article-list" id="articles"></div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
