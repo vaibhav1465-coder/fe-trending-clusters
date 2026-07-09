@@ -122,8 +122,8 @@ function getHomepageItems() {
 }
 
 function renderHomepageWidget() {
-  selectedTitle.textContent = "Whatâ€™s trending on Financial Express";
-  selectedDescription.textContent = "Quick topic chips above help readers discover recent stories from the last 2â€“3 days.";
+  selectedTitle.textContent = "What's trending on Financial Express";
+  selectedDescription.textContent = "Quick topic chips above help readers discover recent stories from the last 2-3 days.";
 
   const items = getHomepageItems();
 
