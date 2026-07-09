@@ -215,7 +215,7 @@ async function loadData(force = false) {
   statusLine.textContent = "Fetching live FE articles and clustering...";
 
   try {
-    const response = await fetch(`/api/trending-clusters?days=3&clusters=12&articles=12&nlp=1${force ? "&forceLive=1" : ""}`, {
+    const response = await fetch(`/api/trending-clusters?days=3&clusters=12&articles=12&nlp=1${force ? "&refresh=1" : ""}`, {
       cache: "no-store"
     });
 
@@ -248,3 +248,4 @@ async function loadData(force = false) {
 
 refreshBtn.addEventListener("click", () => loadData(true));
 loadData();
+
