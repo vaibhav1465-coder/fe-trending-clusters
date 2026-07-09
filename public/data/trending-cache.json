@@ -5,10 +5,10 @@
   "sourceSummary": {
     "feArticleSourceApi": "/api/fe-articles",
     "clusterApi": "/api/trending-clusters",
-    "googleNlp": "fallback/off",
-    "googleNlpCallsMade": 0
+    "googleNlp": "enabled",
+    "googleNlpCallsMade": 25
   },
-  "generatedAt": "2026-07-09T06:03:25.558Z",
+  "generatedAt": "2026-07-09T06:08:37.504Z",
   "days": 3,
   "articleCount": 143,
   "clusterCount": 12,
@@ -67,11 +67,11 @@
     }
   ],
   "nlpStatus": {
-    "enabled": false,
-    "provider": "local-fallback",
-    "callsMade": 0,
+    "enabled": true,
+    "provider": "google-cloud-natural-language",
+    "callsMade": 25,
     "maxCallsAllowedThisRequest": 25,
-    "fallbackCount": 143,
+    "fallbackCount": 118,
     "errors": []
   },
   "clusters": [
@@ -79,19 +79,19 @@
       "id": "ai-stocks",
       "name": "AI Stocks",
       "description": "Recent AI, tech, semiconductor and IT services stories from Financial Express.",
-      "articleCount": 10,
-      "trendScore": 4000,
+      "articleCount": 12,
+      "trendScore": 4240,
       "nlpEntities": [
-        "CEO",
-        "Brand",
+        "car",
+        "vehicle",
+        "E20",
         "Nitin Ahlawat",
-        "Toyota",
-        "India",
+        "ethanol blend",
         "TCS",
-        "Can",
-        "The",
-        "Will",
-        "June"
+        "earnings",
+        "recovery",
+        "stock",
+        "delays"
       ],
       "articles": [
         {
@@ -104,46 +104,82 @@
           "section": "Trending",
           "categories": [],
           "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
+            "language": "en",
             "entities": [
               {
-                "name": "CEO",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "car",
+                "type": "CONSUMER_GOOD",
+                "salience": 0.28,
                 "mentionCount": 1
               },
               {
-                "name": "Brand",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "vehicle",
+                "type": "CONSUMER_GOOD",
+                "salience": 0.1116,
                 "mentionCount": 1
+              },
+              {
+                "name": "E20",
+                "type": "CONSUMER_GOOD",
+                "salience": 0.1086,
+                "mentionCount": 2
               },
               {
                 "name": "Nitin Ahlawat",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "PERSON",
+                "salience": 0.0947,
+                "mentionCount": 2
+              },
+              {
+                "name": "ethanol blend",
+                "type": "OTHER",
+                "salience": 0.0761,
+                "mentionCount": 1
+              },
+              {
+                "name": "engine",
+                "type": "OTHER",
+                "salience": 0.0677,
+                "mentionCount": 1
+              },
+              {
+                "name": "CEO",
+                "type": "ORGANIZATION",
+                "salience": 0.066,
+                "mentionCount": 1
+              },
+              {
+                "name": "fuel",
+                "type": "OTHER",
+                "salience": 0.0514,
+                "mentionCount": 1
+              },
+              {
+                "name": "petrol",
+                "type": "OTHER",
+                "salience": 0.0347,
+                "mentionCount": 1
+              },
+              {
+                "name": "government assurances",
+                "type": "OTHER",
+                "salience": 0.0259,
                 "mentionCount": 1
               },
               {
                 "name": "Toyota",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "ORGANIZATION",
+                "salience": 0.0203,
                 "mentionCount": 1
               },
               {
-                "name": "India",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Trending",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "safety",
+                "type": "OTHER",
+                "salience": 0.0182,
                 "mentionCount": 1
               }
-            ]
+            ],
+            "provider": "google-cloud-natural-language"
           }
         },
         {
@@ -156,58 +192,82 @@
           "section": "Market",
           "categories": [],
           "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
+            "language": "en",
             "entities": [
               {
                 "name": "TCS",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "Can",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "ORGANIZATION",
+                "salience": 0.2608,
                 "mentionCount": 1
               },
               {
-                "name": "The",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "earnings",
+                "type": "OTHER",
+                "salience": 0.1708,
                 "mentionCount": 1
               },
               {
-                "name": "Will",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "recovery",
+                "type": "EVENT",
+                "salience": 0.1507,
                 "mentionCount": 1
               },
               {
-                "name": "June",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "earnings",
+                "type": "OTHER",
+                "salience": 0.0538,
+                "mentionCount": 1
+              },
+              {
+                "name": "stock",
+                "type": "OTHER",
+                "salience": 0.0538,
+                "mentionCount": 1
+              },
+              {
+                "name": "results",
+                "type": "OTHER",
+                "salience": 0.05,
+                "mentionCount": 1
+              },
+              {
+                "name": "view",
+                "type": "OTHER",
+                "salience": 0.0462,
+                "mentionCount": 1
+              },
+              {
+                "name": "risks",
+                "type": "OTHER",
+                "salience": 0.0418,
+                "mentionCount": 1
+              },
+              {
+                "name": "dividend details",
+                "type": "OTHER",
+                "salience": 0.0348,
+                "mentionCount": 1
+              },
+              {
+                "name": "TCS Q1",
+                "type": "OTHER",
+                "salience": 0.0337,
                 "mentionCount": 1
               },
               {
                 "name": "Street",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "LOCATION",
+                "salience": 0.0274,
                 "mentionCount": 1
               },
               {
-                "name": "Here",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Kotak Institutional Equities",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "investors",
+                "type": "PERSON",
+                "salience": 0.0244,
                 "mentionCount": 1
               }
-            ]
+            ],
+            "provider": "google-cloud-natural-language"
           }
         },
         {
@@ -220,52 +280,82 @@
           "section": "Business",
           "categories": [],
           "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
+            "language": "en",
             "entities": [
               {
-                "name": "Regulatory",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "delays",
+                "type": "OTHER",
+                "salience": 0.24,
                 "mentionCount": 1
               },
               {
-                "name": "Navi Mumbai. According",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "cargo airlines",
+                "type": "ORGANIZATION",
+                "salience": 0.24,
+                "mentionCount": 1
+              },
+              {
+                "name": "shift",
+                "type": "EVENT",
+                "salience": 0.2323,
+                "mentionCount": 1
+              },
+              {
+                "name": "Navi Mumbai",
+                "type": "LOCATION",
+                "salience": 0.0589,
+                "mentionCount": 1
+              },
+              {
+                "name": "people",
+                "type": "PERSON",
+                "salience": 0.0481,
+                "mentionCount": 1
+              },
+              {
+                "name": "freighter operators",
+                "type": "LOCATION",
+                "salience": 0.0376,
+                "mentionCount": 1
+              },
+              {
+                "name": "developments",
+                "type": "OTHER",
+                "salience": 0.0327,
                 "mentionCount": 1
               },
               {
                 "name": "West Asia",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Europe",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "LOCATION",
+                "salience": 0.0205,
                 "mentionCount": 1
               },
               {
                 "name": "Southeast Asia",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "LOCATION",
+                "salience": 0.0205,
                 "mentionCount": 1
               },
               {
-                "name": "NMIA",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "Europe",
+                "type": "LOCATION",
+                "salience": 0.0181,
                 "mentionCount": 1
               },
               {
-                "name": "August",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "c",
+                "type": "OTHER",
+                "salience": 0.0178,
+                "mentionCount": 1
+              },
+              {
+                "name": "Business",
+                "type": "OTHER",
+                "salience": 0.016,
                 "mentionCount": 1
               }
-            ]
+            ],
+            "provider": "google-cloud-natural-language"
           }
         },
         {
@@ -278,34 +368,76 @@
           "section": "Life",
           "categories": [],
           "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
+            "language": "en",
             "entities": [
               {
-                "name": "JadePuffer",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
+                "name": "AI",
+                "type": "OTHER",
+                "salience": 0.2748,
                 "mentionCount": 2
               },
               {
                 "name": "All",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "OTHER",
+                "salience": 0.1887,
                 "mentionCount": 1
               },
               {
-                "name": "AI-ransomware",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "world",
+                "type": "LOCATION",
+                "salience": 0.1887,
+                "mentionCount": 1
+              },
+              {
+                "name": "JadePuffer",
+                "type": "OTHER",
+                "salience": 0.1313,
+                "mentionCount": 1
+              },
+              {
+                "name": "attack",
+                "type": "EVENT",
+                "salience": 0.0521,
+                "mentionCount": 1
+              },
+              {
+                "name": "human",
+                "type": "PERSON",
+                "salience": 0.0506,
+                "mentionCount": 1
+              },
+              {
+                "name": "ransomware",
+                "type": "OTHER",
+                "salience": 0.0292,
+                "mentionCount": 1
+              },
+              {
+                "name": "humans",
+                "type": "PERSON",
+                "salience": 0.0268,
+                "mentionCount": 1
+              },
+              {
+                "name": "JadePuffer",
+                "type": "PERSON",
+                "salience": 0.0173,
+                "mentionCount": 1
+              },
+              {
+                "name": "defence",
+                "type": "OTHER",
+                "salience": 0.0125,
                 "mentionCount": 1
               },
               {
                 "name": "Life",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "OTHER",
+                "salience": 0.0124,
                 "mentionCount": 1
               }
-            ]
+            ],
+            "provider": "google-cloud-natural-language"
           }
         },
         {
@@ -318,52 +450,82 @@
           "section": "Sports",
           "categories": [],
           "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
+            "language": "en",
             "entities": [
               {
-                "name": "All",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "defeat",
+                "type": "OTHER",
+                "salience": 0.2249,
                 "mentionCount": 1
               },
               {
                 "name": "India",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "ORGANIZATION",
+                "salience": 0.2117,
+                "mentionCount": 1
+              },
+              {
+                "name": "captaincy",
+                "type": "OTHER",
+                "salience": 0.108,
+                "mentionCount": 1
+              },
+              {
+                "name": "spotlight",
+                "type": "OTHER",
+                "salience": 0.0953,
                 "mentionCount": 1
               },
               {
                 "name": "Shreyas Iyer",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "PERSON",
+                "salience": 0.0838,
+                "mentionCount": 1
+              },
+              {
+                "name": "defeat",
+                "type": "EVENT",
+                "salience": 0.0534,
+                "mentionCount": 1
+              },
+              {
+                "name": "series lead",
+                "type": "OTHER",
+                "salience": 0.0402,
+                "mentionCount": 1
+              },
+              {
+                "name": "batting performance",
+                "type": "OTHER",
+                "salience": 0.0327,
+                "mentionCount": 1
+              },
+              {
+                "name": "team",
+                "type": "ORGANIZATION",
+                "salience": 0.0327,
+                "mentionCount": 1
+              },
+              {
+                "name": "captain",
+                "type": "PERSON",
+                "salience": 0.0325,
                 "mentionCount": 1
               },
               {
                 "name": "Trent Bridge",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "LOCATION",
+                "salience": 0.028,
                 "mentionCount": 1
               },
               {
                 "name": "England",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Indian",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Sports",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "ORGANIZATION",
+                "salience": 0.0257,
                 "mentionCount": 1
               }
-            ]
+            ],
+            "provider": "google-cloud-natural-language"
           }
         },
         {
@@ -376,46 +538,76 @@
           "section": "Business",
           "categories": [],
           "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
+            "language": "en",
             "entities": [
               {
+                "name": "Red alert",
+                "type": "OTHER",
+                "salience": 0.3938,
+                "mentionCount": 2
+              },
+              {
+                "name": "city",
+                "type": "LOCATION",
+                "salience": 0.1689,
+                "mentionCount": 1
+              },
+              {
+                "name": "rainfall",
+                "type": "EVENT",
+                "salience": 0.0977,
+                "mentionCount": 1
+              },
+              {
                 "name": "Delhi",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
+                "type": "LOCATION",
+                "salience": 0.0834,
+                "mentionCount": 3
               },
               {
-                "name": "Noida",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "Red",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Ghaziabad. Heavy",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Delhi-NCR",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "waterlogging",
+                "type": "OTHER",
+                "salience": 0.0669,
                 "mentionCount": 1
               },
               {
                 "name": "Ghaziabad",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "LOCATION",
+                "salience": 0.0624,
+                "mentionCount": 2
+              },
+              {
+                "name": "Noida",
+                "type": "LOCATION",
+                "salience": 0.0479,
+                "mentionCount": 2
+              },
+              {
+                "name": "monsoon rains",
+                "type": "OTHER",
+                "salience": 0.033,
+                "mentionCount": 1
+              },
+              {
+                "name": "waterlogging",
+                "type": "OTHER",
+                "salience": 0.0161,
+                "mentionCount": 1
+              },
+              {
+                "name": "NCR",
+                "type": "ORGANIZATION",
+                "salience": 0.0158,
+                "mentionCount": 1
+              },
+              {
+                "name": "Business",
+                "type": "OTHER",
+                "salience": 0.0141,
                 "mentionCount": 1
               }
-            ]
+            ],
+            "provider": "google-cloud-natural-language"
           }
         },
         {
@@ -428,58 +620,82 @@
           "section": "World News",
           "categories": [],
           "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
+            "language": "en",
             "entities": [
               {
-                "name": "Vegas-bound Southwest Boeing",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "Southwest Boeing 737",
+                "type": "OTHER",
+                "salience": 0.3155,
                 "mentionCount": 1
               },
               {
-                "name": "U-turn",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "emergency U-turn",
+                "type": "EVENT",
+                "salience": 0.1458,
                 "mentionCount": 1
               },
               {
                 "name": "Pacific Ocean",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "LOCATION",
+                "salience": 0.1097,
                 "mentionCount": 1
               },
               {
-                "name": "Here",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "flight",
+                "type": "EVENT",
+                "salience": 0.0698,
                 "mentionCount": 1
               },
               {
-                "name": "A Southwest Airlines Boeing",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "diversion",
+                "type": "OTHER",
+                "salience": 0.0424,
                 "mentionCount": 1
               },
               {
-                "name": "MAX",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Hawaii",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "passenger",
+                "type": "PERSON",
+                "salience": 0.0424,
                 "mentionCount": 1
               },
               {
                 "name": "Las Vegas",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "LOCATION",
+                "salience": 0.0415,
+                "mentionCount": 1
+              },
+              {
+                "name": "Hawaii",
+                "type": "LOCATION",
+                "salience": 0.0365,
+                "mentionCount": 1
+              },
+              {
+                "name": "Boeing 737 MAX",
+                "type": "OTHER",
+                "salience": 0.036,
+                "mentionCount": 1
+              },
+              {
+                "name": "Southwest Airlines",
+                "type": "ORGANIZATION",
+                "salience": 0.036,
+                "mentionCount": 1
+              },
+              {
+                "name": "Honolulu",
+                "type": "LOCATION",
+                "salience": 0.0335,
+                "mentionCount": 1
+              },
+              {
+                "name": "issue",
+                "type": "OTHER",
+                "salience": 0.0297,
                 "mentionCount": 1
               }
-            ]
+            ],
+            "provider": "google-cloud-natural-language"
           }
         },
         {
@@ -492,34 +708,76 @@
           "section": "Business",
           "categories": [],
           "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
+            "language": "en",
             "entities": [
               {
                 "name": "Jalandhar Cantt Station",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "ORGANIZATION",
+                "salience": 0.2569,
                 "mentionCount": 1
               },
               {
-                "name": "Air",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "Air concourse",
+                "type": "OTHER",
+                "salience": 0.1707,
                 "mentionCount": 1
               },
               {
-                "name": "The Jalandhar Cantt Railway",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "makeover",
+                "type": "EVENT",
+                "salience": 0.1511,
                 "mentionCount": 1
               },
               {
-                "name": "Station",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "roof",
+                "type": "OTHER",
+                "salience": 0.1177,
+                "mentionCount": 1
+              },
+              {
+                "name": "access",
+                "type": "OTHER",
+                "salience": 0.1177,
+                "mentionCount": 1
+              },
+              {
+                "name": "air concourse",
+                "type": "OTHER",
+                "salience": 0.0407,
+                "mentionCount": 1
+              },
+              {
+                "name": "platform roofing",
+                "type": "OTHER",
+                "salience": 0.0407,
+                "mentionCount": 1
+              },
+              {
+                "name": "Jalandhar Cantt Railway Station",
+                "type": "ORGANIZATION",
+                "salience": 0.0349,
+                "mentionCount": 1
+              },
+              {
+                "name": "accessibility",
+                "type": "OTHER",
+                "salience": 0.0286,
+                "mentionCount": 1
+              },
+              {
+                "name": "Business",
+                "type": "OTHER",
+                "salience": 0.0251,
+                "mentionCount": 1
+              },
+              {
+                "name": "passenger amenities",
+                "type": "OTHER",
+                "salience": 0.0158,
                 "mentionCount": 1
               }
-            ]
+            ],
+            "provider": "google-cloud-natural-language"
           }
         },
         {
@@ -532,58 +790,82 @@
           "section": "Market",
           "categories": [],
           "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
+            "language": "en",
             "entities": [
               {
-                "name": "Syngene",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
+                "name": "Goldman Sachs",
+                "type": "ORGANIZATION",
+                "salience": 0.3835,
                 "mentionCount": 2
               },
               {
-                "name": "Goldman Sachs Top Pharma",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Picks",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
+                "name": "Reddy",
+                "type": "PERSON",
+                "salience": 0.163,
+                "mentionCount": 2
               },
               {
                 "name": "Piramal",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "PERSON",
+                "salience": 0.1078,
                 "mentionCount": 1
               },
               {
-                "name": "Dr Reddy",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "Top Pharma Picks",
+                "type": "WORK_OF_ART",
+                "salience": 0.0907,
                 "mentionCount": 1
               },
               {
-                "name": "Goldman Sachs",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "upside",
+                "type": "OTHER",
+                "salience": 0.0621,
                 "mentionCount": 1
+              },
+              {
+                "name": "downside",
+                "type": "OTHER",
+                "salience": 0.0423,
+                "mentionCount": 1
+              },
+              {
+                "name": "Syngene",
+                "type": "ORGANIZATION",
+                "salience": 0.0422,
+                "mentionCount": 2
               },
               {
                 "name": "Piramal Pharma",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "OTHER",
+                "salience": 0.0154,
+                "mentionCount": 1
+              },
+              {
+                "name": "gains",
+                "type": "OTHER",
+                "salience": 0.0144,
                 "mentionCount": 1
               },
               {
                 "name": "Divi",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "PERSON",
+                "salience": 0.0113,
+                "mentionCount": 1
+              },
+              {
+                "name": "peers",
+                "type": "PERSON",
+                "salience": 0.0101,
+                "mentionCount": 1
+              },
+              {
+                "name": "Market",
+                "type": "OTHER",
+                "salience": 0.01,
                 "mentionCount": 1
               }
-            ]
+            ],
+            "provider": "google-cloud-natural-language"
           }
         },
         {
@@ -596,34 +878,210 @@
           "section": "Business",
           "categories": [],
           "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
+            "language": "en",
             "entities": [
               {
-                "name": "PM Modi",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "Modi",
+                "type": "PERSON",
+                "salience": 0.2124,
                 "mentionCount": 1
               },
               {
                 "name": "Australian",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "LOCATION",
+                "salience": 0.2124,
+                "mentionCount": 1
+              },
+              {
+                "name": "investment",
+                "type": "OTHER",
+                "salience": 0.1401,
+                "mentionCount": 1
+              },
+              {
+                "name": "supply chain disruption",
+                "type": "OTHER",
+                "salience": 0.0974,
+                "mentionCount": 1
+              },
+              {
+                "name": "energy crisis",
+                "type": "EVENT",
+                "salience": 0.0974,
+                "mentionCount": 1
+              },
+              {
+                "name": "ties",
+                "type": "OTHER",
+                "salience": 0.0962,
+                "mentionCount": 1
+              },
+              {
+                "name": "infrastructure",
+                "type": "OTHER",
+                "salience": 0.0331,
+                "mentionCount": 1
+              },
+              {
+                "name": "equities",
+                "type": "OTHER",
+                "salience": 0.0331,
+                "mentionCount": 1
+              },
+              {
+                "name": "markets",
+                "type": "OTHER",
+                "salience": 0.0233,
+                "mentionCount": 1
+              },
+              {
+                "name": "Business",
+                "type": "OTHER",
+                "salience": 0.0231,
                 "mentionCount": 1
               },
               {
                 "name": "AustralianSuper",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "PERSON",
+                "salience": 0.0228,
+                "mentionCount": 1
+              }
+            ],
+            "provider": "google-cloud-natural-language"
+          }
+        },
+        {
+          "title": "TCS Q1FY27 earnings LIVE: Will Rupee tailwinds save margins amid wage hikes & AI pricing pressure? Dividend today",
+          "url": "https://www.financialexpress.com/business/industry-tcs-q1-fy27-results-live-updates-ai-deal-wins-revenue-growth-profit-rupee-depreciation-4286908/",
+          "publishedAt": "2026-07-09T03:28:16.000Z",
+          "summary": "TCS Q1 FY27 Results LIVE: Tata Consultancy Services is expected to report a subdued first quarter. Will TCS earning beat estimates?",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "language": "en",
+            "entities": [
+              {
+                "name": "earnings",
+                "type": "OTHER",
+                "salience": 0.2797,
                 "mentionCount": 1
               },
               {
-                "name": "India",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "TCS Q1FY27",
+                "type": "ORGANIZATION",
+                "salience": 0.1673,
+                "mentionCount": 4
+              },
+              {
+                "name": "Rupee tailwinds",
+                "type": "OTHER",
+                "salience": 0.1017,
+                "mentionCount": 1
+              },
+              {
+                "name": "margins",
+                "type": "OTHER",
+                "salience": 0.1017,
+                "mentionCount": 1
+              },
+              {
+                "name": "wage hikes",
+                "type": "OTHER",
+                "salience": 0.1017,
+                "mentionCount": 1
+              },
+              {
+                "name": "pricing pressure",
+                "type": "OTHER",
+                "salience": 0.0697,
+                "mentionCount": 1
+              },
+              {
+                "name": "AI",
+                "type": "OTHER",
+                "salience": 0.0697,
+                "mentionCount": 1
+              },
+              {
+                "name": "Dividend",
+                "type": "OTHER",
+                "salience": 0.034,
+                "mentionCount": 1
+              },
+              {
+                "name": "Q1 FY27 Results LIVE",
+                "type": "CONSUMER_GOOD",
+                "salience": 0.0281,
+                "mentionCount": 1
+              },
+              {
+                "name": "Business",
+                "type": "OTHER",
+                "salience": 0.0166,
+                "mentionCount": 1
+              },
+              {
+                "name": "estimates",
+                "type": "OTHER",
+                "salience": 0.0111,
                 "mentionCount": 1
               }
-            ]
+            ],
+            "provider": "google-cloud-natural-language"
+          }
+        },
+        {
+          "title": "'I'm No. 1 on their kill list': Trump claims Iran is plotting to assassinate him, says he 'may be gone too'",
+          "url": "https://www.financialexpress.com/world-news/im-no-1-on-their-kill-list-trump-claims-iran-is-plotting-to-assassinate-him-says-he-may-be-gone-too/4287104/",
+          "publishedAt": "2026-07-09T03:23:40.000Z",
+          "summary": "US President Donald Trump claims Iran is targeting him for assassination amid escalating conflict and the collapse of a ceasefire agreement between the two nations following recent attacks and airstrikes.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "World News",
+          "categories": [],
+          "nlp": {
+            "language": "en",
+            "entities": [
+              {
+                "name": "Donald Trump",
+                "type": "PERSON",
+                "salience": 0.8215,
+                "mentionCount": 3
+              },
+              {
+                "name": "kill list",
+                "type": "OTHER",
+                "salience": 0.05,
+                "mentionCount": 1
+              },
+              {
+                "name": "Iran",
+                "type": "ORGANIZATION",
+                "salience": 0.0487,
+                "mentionCount": 2
+              },
+              {
+                "name": "assassination",
+                "type": "EVENT",
+                "salience": 0.0154,
+                "mentionCount": 1
+              },
+              {
+                "name": "ceasefire agreement",
+                "type": "WORK_OF_ART",
+                "salience": 0.0116,
+                "mentionCount": 1
+              },
+              {
+                "name": "nations",
+                "type": "ORGANIZATION",
+                "salience": 0.0116,
+                "mentionCount": 1
+              }
+            ],
+            "provider": "google-cloud-natural-language"
           }
         }
       ]
@@ -633,60 +1091,20 @@
       "name": "Finance Stocks",
       "description": "Banks, NBFCs, lending, deposits and financial services stock updates.",
       "articleCount": 10,
-      "trendScore": 518,
+      "trendScore": 464,
       "nlpEntities": [
-        "SBI Funds Management IPO",
-        "July",
-        "Check",
-        "OFS",
         "Kevin Warsh",
         "Hyun-Song Shin",
         "Opinion",
         "Premiumisation",
         "Airtel",
-        "ARPU"
+        "ARPU",
+        "Jio",
+        "Vodafone Idea",
+        "Results Preview",
+        "Auto"
       ],
       "articles": [
-        {
-          "title": "SBI Funds Management IPO opens July 14: Check price band, valuation, other key details",
-          "url": "https://www.financialexpress.com/market/sbi-funds-management-ipo-opens-july-14-check-price-band-valuation-other-key-details-4287089/",
-          "publishedAt": "2026-07-09T02:28:34.000Z",
-          "summary": "SBI Funds Management IPO opens July 14 with a Rs 545-574 band and Rs 1.17 lakh crore valuation; check listing date, OFS details and key managers.",
-          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
-          "sourceType": "wp-rest",
-          "section": "Market",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "SBI Funds Management IPO",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "July",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "Check",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "OFS",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
         {
           "title": "A tale of two central bankers",
           "url": "https://www.financialexpress.com/opinion/a-tale-of-two-central-bankers/4286966/",
@@ -1082,101 +1500,247 @@
               }
             ]
           }
+        },
+        {
+          "title": "ED freezes Rs 440-crore TMC bank deposits in money laundering probe",
+          "url": "https://www.financialexpress.com/india-news/ed-freezes-rs-440-crore-tmc-bank-deposits-in-money-laundering-probe/4286579/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/india-news/",
+          "sourceType": "html-page",
+          "section": "India News",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "TMC",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
         }
       ]
     },
     {
-      "id": "ipo-watch",
-      "name": "IPO Watch",
-      "description": "IPO launches, GMP, subscription, allotment and listing updates.",
-      "articleCount": 6,
-      "trendScore": 378,
+      "id": "defence-stocks",
+      "name": "Defence Stocks",
+      "description": "Recent stories on defence companies, orders, contracts and stock movement.",
+      "articleCount": 9,
+      "trendScore": 421,
       "nlpEntities": [
-        "SBI Funds Management IPO",
-        "July",
-        "Check",
-        "OFS",
-        "Kusumgar IPO",
-        "Day",
-        "GMP",
-        "Issue",
-        "Flipkart",
-        "Decision"
+        "AI",
+        "All",
+        "world",
+        "JadePuffer",
+        "attack",
+        "shipping containers",
+        "China",
+        "India",
+        "challenge",
+        "container production"
       ],
       "articles": [
         {
-          "title": "SBI Funds Management IPO opens July 14: Check price band, valuation, other key details",
-          "url": "https://www.financialexpress.com/market/sbi-funds-management-ipo-opens-july-14-check-price-band-valuation-other-key-details-4287089/",
-          "publishedAt": "2026-07-09T02:28:34.000Z",
-          "summary": "SBI Funds Management IPO opens July 14 with a Rs 545-574 band and Rs 1.17 lakh crore valuation; check listing date, OFS details and key managers.",
+          "title": "All about JadePuffer and why world's first AI-ransomware attack needed a human",
+          "url": "https://www.financialexpress.com/life/technology-all-about-jadepuffer-and-why-worlds-first-ai-ransomware-attack-needed-a-human-4287211/",
+          "publishedAt": "2026-07-09T05:23:01.000Z",
+          "summary": "JadePuffer used AI to execute ransomware but still relied on humans for targets and infrastructure; learn what it means for cyber defence.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Life",
+          "categories": [],
+          "nlp": {
+            "language": "en",
+            "entities": [
+              {
+                "name": "AI",
+                "type": "OTHER",
+                "salience": 0.2748,
+                "mentionCount": 2
+              },
+              {
+                "name": "All",
+                "type": "OTHER",
+                "salience": 0.1887,
+                "mentionCount": 1
+              },
+              {
+                "name": "world",
+                "type": "LOCATION",
+                "salience": 0.1887,
+                "mentionCount": 1
+              },
+              {
+                "name": "JadePuffer",
+                "type": "OTHER",
+                "salience": 0.1313,
+                "mentionCount": 1
+              },
+              {
+                "name": "attack",
+                "type": "EVENT",
+                "salience": 0.0521,
+                "mentionCount": 1
+              },
+              {
+                "name": "human",
+                "type": "PERSON",
+                "salience": 0.0506,
+                "mentionCount": 1
+              },
+              {
+                "name": "ransomware",
+                "type": "OTHER",
+                "salience": 0.0292,
+                "mentionCount": 1
+              },
+              {
+                "name": "humans",
+                "type": "PERSON",
+                "salience": 0.0268,
+                "mentionCount": 1
+              },
+              {
+                "name": "JadePuffer",
+                "type": "PERSON",
+                "salience": 0.0173,
+                "mentionCount": 1
+              },
+              {
+                "name": "defence",
+                "type": "OTHER",
+                "salience": 0.0125,
+                "mentionCount": 1
+              },
+              {
+                "name": "Life",
+                "type": "OTHER",
+                "salience": 0.0124,
+                "mentionCount": 1
+              }
+            ],
+            "provider": "google-cloud-natural-language"
+          }
+        },
+        {
+          "title": "China controls 90% of shipping containers. India's Rs 10,000 crore challenge puts these 2 stocks in focus",
+          "url": "https://www.financialexpress.com/market/stock-insights/china-controls-90-of-shipping-containers-indias-rs-10000-crore-challenge-puts-these-2-stocks-in-focus/4286853/",
+          "publishedAt": "2026-07-09T00:00:00.000Z",
+          "summary": "China dominates 90% of global container production, but India is fighting back with a ₹10,000 crore manufacturing push. Here's how the country's bid for self-reliance could create opportunities across the container value chain.",
           "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
           "sourceType": "wp-rest",
           "section": "Market",
           "categories": [],
           "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
+            "language": "en",
             "entities": [
               {
-                "name": "SBI Funds Management IPO",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "July",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "Check",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "shipping containers",
+                "type": "OTHER",
+                "salience": 0.3324,
                 "mentionCount": 1
               },
               {
-                "name": "OFS",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "China",
+                "type": "ORGANIZATION",
+                "salience": 0.2271,
+                "mentionCount": 2
+              },
+              {
+                "name": "India",
+                "type": "LOCATION",
+                "salience": 0.0941,
+                "mentionCount": 2
+              },
+              {
+                "name": "challenge",
+                "type": "OTHER",
+                "salience": 0.078,
+                "mentionCount": 1
+              },
+              {
+                "name": "container production",
+                "type": "OTHER",
+                "salience": 0.0367,
+                "mentionCount": 1
+              },
+              {
+                "name": "stocks",
+                "type": "OTHER",
+                "salience": 0.0364,
+                "mentionCount": 1
+              },
+              {
+                "name": "focus",
+                "type": "OTHER",
+                "salience": 0.0364,
+                "mentionCount": 1
+              },
+              {
+                "name": "bid",
+                "type": "OTHER",
+                "salience": 0.0254,
+                "mentionCount": 1
+              },
+              {
+                "name": "self-reliance",
+                "type": "OTHER",
+                "salience": 0.0254,
+                "mentionCount": 1
+              },
+              {
+                "name": "opportunities",
+                "type": "OTHER",
+                "salience": 0.0254,
+                "mentionCount": 1
+              },
+              {
+                "name": "container value chain",
+                "type": "OTHER",
+                "salience": 0.0178,
+                "mentionCount": 1
+              },
+              {
+                "name": "Market",
+                "type": "OTHER",
+                "salience": 0.0177,
                 "mentionCount": 1
               }
-            ]
+            ],
+            "provider": "google-cloud-natural-language"
           }
         },
         {
-          "title": "Kusumgar IPO sees strong demand on Day 1: Issue subscribed 3.45x, GMP up 38%",
-          "url": "https://www.financialexpress.com/market/ipo-news/kusumgar-ipo-sees-strong-demand-on-day-1-issue-subscribed-3-45x-gmp-up-38/4286881/",
-          "publishedAt": "2026-07-08T16:25:46.000Z",
-          "summary": "Kusumgar IPO draws 3.45x bids on Day 1, with GMP near 38%; check price band, key dates and expert view.",
+          "title": "A tale of two central bankers",
+          "url": "https://www.financialexpress.com/opinion/a-tale-of-two-central-bankers/4286966/",
+          "publishedAt": "2026-07-08T18:07:04.000Z",
+          "summary": "Kevin Warsh and Hyun-Song Shin’s appointments may have come in very different circumstances, but their challenges are similar",
           "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
           "sourceType": "wp-rest",
-          "section": "Market",
+          "section": "Opinion",
           "categories": [],
           "nlp": {
             "provider": "local-fallback",
             "language": "unknown",
             "entities": [
               {
-                "name": "Kusumgar IPO",
+                "name": "Kevin Warsh",
                 "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
+                "salience": 0.08,
+                "mentionCount": 1
               },
               {
-                "name": "Day",
+                "name": "Hyun-Song Shin",
                 "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
+                "salience": 0.08,
+                "mentionCount": 1
               },
               {
-                "name": "GMP",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "Issue",
+                "name": "Opinion",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
@@ -1185,128 +1749,20 @@
           }
         },
         {
-          "title": "Flipkart picks standalone route for food delivery",
-          "url": "https://www.financialexpress.com/business/news/flipkart-picks-standalone-route-for-food-delivery/4286636/",
-          "publishedAt": "2026-07-08T12:49:24.000Z",
-          "summary": "Decision to skip ONDC is likely to delay launch as company gears up for IPO",
+          "title": "Why India must store sunshine",
+          "url": "https://www.financialexpress.com/opinion/why-india-must-store-sunshine/4286955/",
+          "publishedAt": "2026-07-08T18:00:59.000Z",
+          "summary": "India generates enough electricity, the next challenge is supplying it at the right time",
           "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
           "sourceType": "wp-rest",
-          "section": "Business",
+          "section": "Opinion",
           "categories": [],
           "nlp": {
             "provider": "local-fallback",
             "language": "unknown",
             "entities": [
               {
-                "name": "Flipkart",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Decision",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "ONDC",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "IPO. Business",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "SBI Funds Management IPO: Why SBI and Amundi are monetising massive stakes & what changes for investors",
-          "url": "https://www.financialexpress.com/market/ipo-news-sbi-funds-management-ipo-why-sbi-and-amundi-are-monetising-massive-stakes-amp-what-changes-for-investors-4286532/",
-          "publishedAt": null,
-          "summary": "Open the full Financial Express story for complete details.",
-          "sourceFeed": "https://www.financialexpress.com/",
-          "sourceType": "html-page",
-          "section": "Market",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "SBI Funds Management IPO",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Why SBI",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Amundi",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "Cult.fit IPO: Fitness platform files DRHP for Rs 950 crore fresh issue - 3 ‘must know’ details",
-          "url": "https://www.financialexpress.com/market/ipo-news/cult-fit-ipo-fitness-platform-files-drhp-for-rs-950-crore-fresh-issue-3-must-know-detailsnbsp/4285596/",
-          "publishedAt": null,
-          "summary": "Open the full Financial Express story for complete details.",
-          "sourceFeed": "https://www.financialexpress.com/",
-          "sourceType": "html-page",
-          "section": "Market",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "Cult.fit IPO",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Fitness",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "DRHP",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "SBI Funds Management IPO: India’s largest AMC doesn't own ‘SBI’ brand - How 2% royalty impacts margins",
-          "url": "https://www.financialexpress.com/market/sbi-funds-management-ipo-indias-largest-amc-doesnt-own-sbi-brand-how-2-royalty-impacts-margins-4286197/",
-          "publishedAt": null,
-          "summary": "Open the full Financial Express story for complete details.",
-          "sourceFeed": "https://www.financialexpress.com/market/",
-          "sourceType": "html-page",
-          "section": "Market",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "SBI Funds Management IPO",
+                "name": "Why India",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
@@ -1318,19 +1774,231 @@
                 "mentionCount": 1
               },
               {
-                "name": "AMC",
+                "name": "Opinion",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "India-US trade deal can reshape economy, delay only benefits China: Economist Surjit Bhalla",
+          "url": "https://www.financialexpress.com/trending/india-us-trade-deal-can-reshape-economy-delay-only-benefits-chinanbspeconomist-surjit-bhalla/4286920/",
+          "publishedAt": "2026-07-08T17:05:00.000Z",
+          "summary": "Economist Surjit Bhalla believes an India-US trade agreement could significantly improve India's long-term growth, competitiveness and global standing.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Trending",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "India-US",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "China",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
               },
               {
-                "name": "SBI",
+                "name": "Economist Surjit Bhalla. Economist",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
               },
               {
-                "name": "How",
+                "name": "Surjit Bhalla",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Trending",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Sourav Ganguly receives cricket's highest honour, confirms induction into ICC Hall of Fame on 54th birthday",
+          "url": "https://www.financialexpress.com/sports/sourav-ganguly-receives-crickets-highest-honour-confirms-induction-into-icc-hall-of-fame-on-54th-birthday/4286845/",
+          "publishedAt": "2026-07-08T16:19:24.000Z",
+          "summary": "Sourav Ganguly has been inducted into the ICC Hall of Fame on his 54th birthday, becoming the 10th Indian men's cricketer to receive cricket's highest honour.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Sports",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Sourav Ganguly",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "ICC Hall",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Fame",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Indian",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Sports",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Markets reel as West Asia crisis reignites",
+          "url": "https://www.financialexpress.com/market/markets-reel-as-west-asia-crisis-reignites-4286721/",
+          "publishedAt": "2026-07-08T14:09:47.000Z",
+          "summary": "Sensex tanks 1,700 points; Nifty slips below 23,900; investors lose ₹9 lakh crore in notional wealth; India VIX logs steepest single-day rise in 16 months",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Markets",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "West Asia",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Sensex",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Nifty",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India VIX",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "'They're bad people': Trump threatens immediate halt of trade with Spain over NATO defence spending dispute",
+          "url": "https://www.financialexpress.com/world-news/theyre-bad-people-trump-threatens-immediate-halt-of-trade-with-spain-over-nato-defence-spending-dispute/4286635/",
+          "publishedAt": "2026-07-08T12:48:02.000Z",
+          "summary": "US President Donald Trump has ordered an immediate halt to trade with Spain after criticising the country's defence spending and its stance on military cooperation during the Iran conflict.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "World News",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Spain",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "They",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Trump",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "NATO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "US President Donald Trump",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Iran",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "World News",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Gadkari defends E20 fuel rollout, challenges critics to prove claims",
+          "url": "https://www.financialexpress.com/india-news/gadkari-defends-e20-fuel-rollout-challenges-critics-to-prove-claims/4285828/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/india-news/",
+          "sourceType": "html-page",
+          "section": "India News",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Gadkari",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
@@ -1668,69 +2336,93 @@
       ]
     },
     {
-      "id": "defence-stocks",
-      "name": "Defence Stocks",
-      "description": "Recent stories on defence companies, orders, contracts and stock movement.",
-      "articleCount": 9,
-      "trendScore": 351,
+      "id": "ipo-watch",
+      "name": "IPO Watch",
+      "description": "IPO launches, GMP, subscription, allotment and listing updates.",
+      "articleCount": 6,
+      "trendScore": 368,
       "nlpEntities": [
-        "JadePuffer",
-        "All",
-        "AI-ransomware",
-        "Life",
-        "China",
-        "India",
-        "Here",
-        "Kevin Warsh",
-        "Hyun-Song Shin",
-        "Opinion"
+        "IPO",
+        "SBI Funds Management",
+        "valuation",
+        "price band",
+        "details",
+        "Kusumgar IPO",
+        "Day",
+        "GMP",
+        "Issue",
+        "Flipkart"
       ],
       "articles": [
         {
-          "title": "All about JadePuffer and why world's first AI-ransomware attack needed a human",
-          "url": "https://www.financialexpress.com/life/technology-all-about-jadepuffer-and-why-worlds-first-ai-ransomware-attack-needed-a-human-4287211/",
-          "publishedAt": "2026-07-09T05:23:01.000Z",
-          "summary": "JadePuffer used AI to execute ransomware but still relied on humans for targets and infrastructure; learn what it means for cyber defence.",
+          "title": "SBI Funds Management IPO opens July 14: Check price band, valuation, other key details",
+          "url": "https://www.financialexpress.com/market/sbi-funds-management-ipo-opens-july-14-check-price-band-valuation-other-key-details-4287089/",
+          "publishedAt": "2026-07-09T02:28:34.000Z",
+          "summary": "SBI Funds Management IPO opens July 14 with a Rs 545-574 band and Rs 1.17 lakh crore valuation; check listing date, OFS details and key managers.",
           "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
           "sourceType": "wp-rest",
-          "section": "Life",
+          "section": "Market",
           "categories": [],
           "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
+            "language": "en",
             "entities": [
               {
-                "name": "JadePuffer",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
+                "name": "IPO",
+                "type": "EVENT",
+                "salience": 0.7151,
                 "mentionCount": 2
               },
               {
-                "name": "All",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "SBI Funds Management",
+                "type": "ORGANIZATION",
+                "salience": 0.0728,
+                "mentionCount": 2
+              },
+              {
+                "name": "valuation",
+                "type": "OTHER",
+                "salience": 0.0581,
                 "mentionCount": 1
               },
               {
-                "name": "AI-ransomware",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "price band",
+                "type": "OTHER",
+                "salience": 0.0499,
                 "mentionCount": 1
               },
               {
-                "name": "Life",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "details",
+                "type": "OTHER",
+                "salience": 0.0399,
+                "mentionCount": 1
+              },
+              {
+                "name": "band",
+                "type": "ORGANIZATION",
+                "salience": 0.0182,
+                "mentionCount": 1
+              },
+              {
+                "name": "details",
+                "type": "OTHER",
+                "salience": 0.0137,
+                "mentionCount": 1
+              },
+              {
+                "name": "managers",
+                "type": "PERSON",
+                "salience": 0.0106,
                 "mentionCount": 1
               }
-            ]
+            ],
+            "provider": "google-cloud-natural-language"
           }
         },
         {
-          "title": "China controls 90% of shipping containers. India's Rs 10,000 crore challenge puts these 2 stocks in focus",
-          "url": "https://www.financialexpress.com/market/stock-insights/china-controls-90-of-shipping-containers-indias-rs-10000-crore-challenge-puts-these-2-stocks-in-focus/4286853/",
-          "publishedAt": "2026-07-09T00:00:00.000Z",
-          "summary": "China dominates 90% of global container production, but India is fighting back with a ₹10,000 crore manufacturing push. Here's how the country's bid for self-reliance could create opportunities across the container value chain.",
+          "title": "Kusumgar IPO sees strong demand on Day 1: Issue subscribed 3.45x, GMP up 38%",
+          "url": "https://www.financialexpress.com/market/ipo-news/kusumgar-ipo-sees-strong-demand-on-day-1-issue-subscribed-3-45x-gmp-up-38/4286881/",
+          "publishedAt": "2026-07-08T16:25:46.000Z",
+          "summary": "Kusumgar IPO draws 3.45x bids on Day 1, with GMP near 38%; check price band, key dates and expert view.",
           "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
           "sourceType": "wp-rest",
           "section": "Market",
@@ -1740,19 +2432,25 @@
             "language": "unknown",
             "entities": [
               {
-                "name": "China",
+                "name": "Kusumgar IPO",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.16,
                 "mentionCount": 2
               },
               {
-                "name": "India",
+                "name": "Day",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.16,
                 "mentionCount": 2
               },
               {
-                "name": "Here",
+                "name": "GMP",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Issue",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
@@ -1761,32 +2459,38 @@
           }
         },
         {
-          "title": "A tale of two central bankers",
-          "url": "https://www.financialexpress.com/opinion/a-tale-of-two-central-bankers/4286966/",
-          "publishedAt": "2026-07-08T18:07:04.000Z",
-          "summary": "Kevin Warsh and Hyun-Song Shin’s appointments may have come in very different circumstances, but their challenges are similar",
+          "title": "Flipkart picks standalone route for food delivery",
+          "url": "https://www.financialexpress.com/business/news/flipkart-picks-standalone-route-for-food-delivery/4286636/",
+          "publishedAt": "2026-07-08T12:49:24.000Z",
+          "summary": "Decision to skip ONDC is likely to delay launch as company gears up for IPO",
           "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
           "sourceType": "wp-rest",
-          "section": "Opinion",
+          "section": "Business",
           "categories": [],
           "nlp": {
             "provider": "local-fallback",
             "language": "unknown",
             "entities": [
               {
-                "name": "Kevin Warsh",
+                "name": "Flipkart",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
               },
               {
-                "name": "Hyun-Song Shin",
+                "name": "Decision",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
               },
               {
-                "name": "Opinion",
+                "name": "ONDC",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "IPO. Business",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
@@ -1795,256 +2499,112 @@
           }
         },
         {
-          "title": "Why India must store sunshine",
-          "url": "https://www.financialexpress.com/opinion/why-india-must-store-sunshine/4286955/",
-          "publishedAt": "2026-07-08T18:00:59.000Z",
-          "summary": "India generates enough electricity, the next challenge is supplying it at the right time",
-          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
-          "sourceType": "wp-rest",
-          "section": "Opinion",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "Why India",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "India",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Opinion",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "India-US trade deal can reshape economy, delay only benefits China: Economist Surjit Bhalla",
-          "url": "https://www.financialexpress.com/trending/india-us-trade-deal-can-reshape-economy-delay-only-benefits-chinanbspeconomist-surjit-bhalla/4286920/",
-          "publishedAt": "2026-07-08T17:05:00.000Z",
-          "summary": "Economist Surjit Bhalla believes an India-US trade agreement could significantly improve India's long-term growth, competitiveness and global standing.",
-          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
-          "sourceType": "wp-rest",
-          "section": "Trending",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "India-US",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "China",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Economist Surjit Bhalla. Economist",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Surjit Bhalla",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "India",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Trending",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "Sourav Ganguly receives cricket's highest honour, confirms induction into ICC Hall of Fame on 54th birthday",
-          "url": "https://www.financialexpress.com/sports/sourav-ganguly-receives-crickets-highest-honour-confirms-induction-into-icc-hall-of-fame-on-54th-birthday/4286845/",
-          "publishedAt": "2026-07-08T16:19:24.000Z",
-          "summary": "Sourav Ganguly has been inducted into the ICC Hall of Fame on his 54th birthday, becoming the 10th Indian men's cricketer to receive cricket's highest honour.",
-          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
-          "sourceType": "wp-rest",
-          "section": "Sports",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "Sourav Ganguly",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "ICC Hall",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "Fame",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "Indian",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Sports",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "Markets reel as West Asia crisis reignites",
-          "url": "https://www.financialexpress.com/market/markets-reel-as-west-asia-crisis-reignites-4286721/",
-          "publishedAt": "2026-07-08T14:09:47.000Z",
-          "summary": "Sensex tanks 1,700 points; Nifty slips below 23,900; investors lose ₹9 lakh crore in notional wealth; India VIX logs steepest single-day rise in 16 months",
-          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
-          "sourceType": "wp-rest",
-          "section": "Market",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "Markets",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "West Asia",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Sensex",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Nifty",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "India VIX",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "'They're bad people': Trump threatens immediate halt of trade with Spain over NATO defence spending dispute",
-          "url": "https://www.financialexpress.com/world-news/theyre-bad-people-trump-threatens-immediate-halt-of-trade-with-spain-over-nato-defence-spending-dispute/4286635/",
-          "publishedAt": "2026-07-08T12:48:02.000Z",
-          "summary": "US President Donald Trump has ordered an immediate halt to trade with Spain after criticising the country's defence spending and its stance on military cooperation during the Iran conflict.",
-          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
-          "sourceType": "wp-rest",
-          "section": "World News",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "Spain",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "They",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Trump",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "NATO",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "US President Donald Trump",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Iran",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "World News",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "Gadkari defends E20 fuel rollout, challenges critics to prove claims",
-          "url": "https://www.financialexpress.com/india-news/gadkari-defends-e20-fuel-rollout-challenges-critics-to-prove-claims/4285828/",
+          "title": "SBI Funds Management IPO: Why SBI and Amundi are monetising massive stakes & what changes for investors",
+          "url": "https://www.financialexpress.com/market/ipo-news-sbi-funds-management-ipo-why-sbi-and-amundi-are-monetising-massive-stakes-amp-what-changes-for-investors-4286532/",
           "publishedAt": null,
           "summary": "Open the full Financial Express story for complete details.",
-          "sourceFeed": "https://www.financialexpress.com/india-news/",
+          "sourceFeed": "https://www.financialexpress.com/",
           "sourceType": "html-page",
-          "section": "India News",
+          "section": "Market",
           "categories": [],
           "nlp": {
             "provider": "local-fallback",
             "language": "unknown",
             "entities": [
               {
-                "name": "Gadkari",
+                "name": "SBI Funds Management IPO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Why SBI",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Amundi",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Cult.fit IPO: Fitness platform files DRHP for Rs 950 crore fresh issue - 3 ‘must know’ details",
+          "url": "https://www.financialexpress.com/market/ipo-news/cult-fit-ipo-fitness-platform-files-drhp-for-rs-950-crore-fresh-issue-3-must-know-detailsnbsp/4285596/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Cult.fit IPO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Fitness",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "DRHP",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "SBI Funds Management IPO: India’s largest AMC doesn't own ‘SBI’ brand - How 2% royalty impacts margins",
+          "url": "https://www.financialexpress.com/market/sbi-funds-management-ipo-indias-largest-amc-doesnt-own-sbi-brand-how-2-royalty-impacts-margins-4286197/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/market/",
+          "sourceType": "html-page",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "SBI Funds Management IPO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "AMC",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "SBI",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "How",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
@@ -2058,8 +2618,8 @@
       "id": "tax-money",
       "name": "Tax Money",
       "description": "Income tax, ITR, EPFO, savings, loans, insurance and money planning.",
-      "articleCount": 10,
-      "trendScore": 326,
+      "articleCount": 12,
+      "trendScore": 328,
       "nlpEntities": [
         "Back",
         "Renewed West Asia",
@@ -2454,6 +3014,68 @@
               }
             ]
           }
+        },
+        {
+          "title": "Man gets 23 flats from builder, seeks tax exemption on all units after Rs 8 crore LTCG demand; ITAT says this",
+          "url": "https://www.financialexpress.com/money/man-gets-23-flats-from-builder-seeks-tax-exemption-on-all-units-after-rs-8-crore-ltcg-demand-itat-says-this-4285404/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/money/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Man",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "LTCG",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "ITAT",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Planning to move from the old tax regime to the new? Check these 10 salary components first",
+          "url": "https://www.financialexpress.com/money/income-tax/planning-to-move-from-the-old-tax-regime-to-the-new-check-these-10-salary-components-first/4284774/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/money/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Planning",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Check",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
         }
       ]
     },
@@ -2464,11 +3086,11 @@
       "articleCount": 5,
       "trendScore": 267,
       "nlpEntities": [
-        "Nifty",
-        "TCS",
-        "Sensex",
+        "points",
+        "Track Sensex",
         "Tech",
-        "Share",
+        "TCS Q1",
+        "Nifty",
         "Results Preview",
         "Auto",
         "OMCs",
@@ -2486,58 +3108,82 @@
           "section": "Market",
           "categories": [],
           "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
+            "language": "en",
             "entities": [
               {
-                "name": "Nifty",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "TCS",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "Sensex",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Tech",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Share",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "July",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "points",
+                "type": "OTHER",
+                "salience": 0.3853,
                 "mentionCount": 1
               },
               {
                 "name": "Track Sensex",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "ORGANIZATION",
+                "salience": 0.1817,
+                "mentionCount": 2
+              },
+              {
+                "name": "Tech",
+                "type": "ORGANIZATION",
+                "salience": 0.0951,
                 "mentionCount": 1
               },
               {
-                "name": "US-Iran",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "TCS Q1",
+                "type": "OTHER",
+                "salience": 0.0648,
+                "mentionCount": 1
+              },
+              {
+                "name": "Nifty",
+                "type": "PERSON",
+                "salience": 0.0491,
+                "mentionCount": 1
+              },
+              {
+                "name": "rise",
+                "type": "EVENT",
+                "salience": 0.0432,
+                "mentionCount": 1
+              },
+              {
+                "name": "Share market",
+                "type": "OTHER",
+                "salience": 0.0429,
+                "mentionCount": 1
+              },
+              {
+                "name": "tensions",
+                "type": "OTHER",
+                "salience": 0.0326,
+                "mentionCount": 1
+              },
+              {
+                "name": "tech profit-booking",
+                "type": "OTHER",
+                "salience": 0.0326,
+                "mentionCount": 1
+              },
+              {
+                "name": "Market",
+                "type": "OTHER",
+                "salience": 0.0259,
+                "mentionCount": 1
+              },
+              {
+                "name": "TCS",
+                "type": "ORGANIZATION",
+                "salience": 0.0154,
+                "mentionCount": 1
+              },
+              {
+                "name": "oil spikes",
+                "type": "OTHER",
+                "salience": 0.0144,
                 "mentionCount": 1
               }
-            ]
+            ],
+            "provider": "google-cloud-natural-language"
           }
         },
         {
@@ -3054,13 +3700,13 @@
       "name": "Gold Rate",
       "description": "Gold prices, bullion, MCX and commodity market movement.",
       "articleCount": 4,
-      "trendScore": 168,
+      "trendScore": 158,
       "nlpEntities": [
-        "Syngene",
-        "Goldman Sachs Top Pharma",
-        "Picks",
+        "Goldman Sachs",
+        "Reddy",
         "Piramal",
-        "Dr Reddy",
+        "Top Pharma Picks",
+        "upside",
         "Warren Buffett",
         "Indian",
         "Who",
@@ -3078,58 +3724,82 @@
           "section": "Market",
           "categories": [],
           "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
+            "language": "en",
             "entities": [
               {
-                "name": "Syngene",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
+                "name": "Goldman Sachs",
+                "type": "ORGANIZATION",
+                "salience": 0.3835,
                 "mentionCount": 2
               },
               {
-                "name": "Goldman Sachs Top Pharma",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Picks",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
+                "name": "Reddy",
+                "type": "PERSON",
+                "salience": 0.163,
+                "mentionCount": 2
               },
               {
                 "name": "Piramal",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "PERSON",
+                "salience": 0.1078,
                 "mentionCount": 1
               },
               {
-                "name": "Dr Reddy",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "Top Pharma Picks",
+                "type": "WORK_OF_ART",
+                "salience": 0.0907,
                 "mentionCount": 1
               },
               {
-                "name": "Goldman Sachs",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "upside",
+                "type": "OTHER",
+                "salience": 0.0621,
                 "mentionCount": 1
+              },
+              {
+                "name": "downside",
+                "type": "OTHER",
+                "salience": 0.0423,
+                "mentionCount": 1
+              },
+              {
+                "name": "Syngene",
+                "type": "ORGANIZATION",
+                "salience": 0.0422,
+                "mentionCount": 2
               },
               {
                 "name": "Piramal Pharma",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "OTHER",
+                "salience": 0.0154,
+                "mentionCount": 1
+              },
+              {
+                "name": "gains",
+                "type": "OTHER",
+                "salience": 0.0144,
                 "mentionCount": 1
               },
               {
                 "name": "Divi",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "PERSON",
+                "salience": 0.0113,
+                "mentionCount": 1
+              },
+              {
+                "name": "peers",
+                "type": "PERSON",
+                "salience": 0.0101,
+                "mentionCount": 1
+              },
+              {
+                "name": "Market",
+                "type": "OTHER",
+                "salience": 0.01,
                 "mentionCount": 1
               }
-            ]
+            ],
+            "provider": "google-cloud-natural-language"
           }
         },
         {
@@ -3449,14 +4119,13 @@
       "trendScore": 50,
       "nlpEntities": [
         "TCS",
-        "Can",
-        "The",
-        "Will",
-        "June",
-        "LIVE",
-        "Will Rupee",
-        "Dividend",
-        "Results LIVE"
+        "earnings",
+        "recovery",
+        "stock",
+        "TCS Q1FY27",
+        "Rupee tailwinds",
+        "margins",
+        "wage hikes"
       ],
       "articles": [
         {
@@ -3469,58 +4138,82 @@
           "section": "Market",
           "categories": [],
           "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
+            "language": "en",
             "entities": [
               {
                 "name": "TCS",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "Can",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "ORGANIZATION",
+                "salience": 0.2608,
                 "mentionCount": 1
               },
               {
-                "name": "The",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "earnings",
+                "type": "OTHER",
+                "salience": 0.1708,
                 "mentionCount": 1
               },
               {
-                "name": "Will",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "recovery",
+                "type": "EVENT",
+                "salience": 0.1507,
                 "mentionCount": 1
               },
               {
-                "name": "June",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "earnings",
+                "type": "OTHER",
+                "salience": 0.0538,
+                "mentionCount": 1
+              },
+              {
+                "name": "stock",
+                "type": "OTHER",
+                "salience": 0.0538,
+                "mentionCount": 1
+              },
+              {
+                "name": "results",
+                "type": "OTHER",
+                "salience": 0.05,
+                "mentionCount": 1
+              },
+              {
+                "name": "view",
+                "type": "OTHER",
+                "salience": 0.0462,
+                "mentionCount": 1
+              },
+              {
+                "name": "risks",
+                "type": "OTHER",
+                "salience": 0.0418,
+                "mentionCount": 1
+              },
+              {
+                "name": "dividend details",
+                "type": "OTHER",
+                "salience": 0.0348,
+                "mentionCount": 1
+              },
+              {
+                "name": "TCS Q1",
+                "type": "OTHER",
+                "salience": 0.0337,
                 "mentionCount": 1
               },
               {
                 "name": "Street",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "LOCATION",
+                "salience": 0.0274,
                 "mentionCount": 1
               },
               {
-                "name": "Here",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Kotak Institutional Equities",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "investors",
+                "type": "PERSON",
+                "salience": 0.0244,
                 "mentionCount": 1
               }
-            ]
+            ],
+            "provider": "google-cloud-natural-language"
           }
         },
         {
@@ -3533,52 +4226,76 @@
           "section": "Business",
           "categories": [],
           "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
+            "language": "en",
             "entities": [
               {
-                "name": "TCS",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "LIVE",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "earnings",
+                "type": "OTHER",
+                "salience": 0.2797,
                 "mentionCount": 1
               },
               {
-                "name": "Will Rupee",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "TCS Q1FY27",
+                "type": "ORGANIZATION",
+                "salience": 0.1673,
+                "mentionCount": 4
+              },
+              {
+                "name": "Rupee tailwinds",
+                "type": "OTHER",
+                "salience": 0.1017,
+                "mentionCount": 1
+              },
+              {
+                "name": "margins",
+                "type": "OTHER",
+                "salience": 0.1017,
+                "mentionCount": 1
+              },
+              {
+                "name": "wage hikes",
+                "type": "OTHER",
+                "salience": 0.1017,
+                "mentionCount": 1
+              },
+              {
+                "name": "pricing pressure",
+                "type": "OTHER",
+                "salience": 0.0697,
+                "mentionCount": 1
+              },
+              {
+                "name": "AI",
+                "type": "OTHER",
+                "salience": 0.0697,
                 "mentionCount": 1
               },
               {
                 "name": "Dividend",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "type": "OTHER",
+                "salience": 0.034,
                 "mentionCount": 1
               },
               {
-                "name": "Results LIVE",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "Q1 FY27 Results LIVE",
+                "type": "CONSUMER_GOOD",
+                "salience": 0.0281,
                 "mentionCount": 1
               },
               {
-                "name": "Tata Consultancy Services",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "Business",
+                "type": "OTHER",
+                "salience": 0.0166,
                 "mentionCount": 1
               },
               {
-                "name": "Will TCS",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
+                "name": "estimates",
+                "type": "OTHER",
+                "salience": 0.0111,
                 "mentionCount": 1
               }
-            ]
+            ],
+            "provider": "google-cloud-natural-language"
           }
         }
       ]
