@@ -92,6 +92,41 @@ const NLP_ENTITY_CLUSTER_MAP = [
   { patterns: ["Bank", "SBI", "HDFC Bank", "ICICI Bank", "NBFC"], clusterId: "finance-stocks" }
 ];
 
+function getGuardState() {
+  if (!global.__FE_TRENDING_REFRESH_GUARD__) {
+    global.__FE_TRENDING_REFRESH_GUARD__ = {
+      lastPublicRefreshAt: 0
+    };
+  }
+
+  return global.__FE_TRENDING_REFRESH_GUARD__;
+}
+
+function getCooldownSeconds() {
+  return Math.max(Number(process.env.PUBLIC_REFRESH_COOLDOWN_SECONDS || 120), 30);
+}
+
+function canUsePublicRefreshSlot() {
+  const guard = getGuardState();
+  const now = Date.now();
+  const cooldownMs = getCooldownSeconds() * 1000;
+  const waitMs = Math.max(0, cooldownMs - (now - guard.lastPublicRefreshAt));
+
+  if (waitMs > 0) {
+    return {
+      allowed: false,
+      waitSeconds: Math.ceil(waitMs / 1000)
+    };
+  }
+
+  guard.lastPublicRefreshAt = now;
+
+  return {
+    allowed: true,
+    waitSeconds: 0
+  };
+}
+
 function articleText(article) {
   const nlpEntityNames = article.nlp && Array.isArray(article.nlp.entities)
     ? article.nlp.entities.map((entity) => entity.name).join(" ")
@@ -256,64 +291,46 @@ function readCache() {
   try {
     if (!fs.existsSync(cachePath)) return null;
     const parsed = JSON.parse(fs.readFileSync(cachePath, "utf8"));
-    if (!parsed || !Array.isArray(parsed.clusters)) return null;
+    if (!parsed || !Array.isArray(parsed.clusters) || !parsed.clusters.length) return null;
     return parsed;
   } catch {
     return null;
   }
 }
 
-async function getTrendingData(options = {}) {
+function serveCache(cache, sourceMode, extra = {}) {
+  return {
+    ...cache,
+    ok: true,
+    sourceMode,
+    servedAt: new Date().toISOString(),
+    ...extra
+  };
+}
+
+async function runLiveRefresh(options) {
   const days = Math.min(Math.max(Number(options.days || process.env.FE_LOOKBACK_DAYS || 3), 1), 7);
   const maxClusters = Math.min(Math.max(Number(options.maxClusters || process.env.FE_MAX_CLUSTERS || 12), 4), 20);
   const maxArticlesPerCluster = Math.min(Math.max(Number(options.maxArticlesPerCluster || process.env.FE_MAX_ARTICLES_PER_CLUSTER || 12), 4), 20);
-  const forceLive = Boolean(options.forceLive);
 
-  let feData;
-  let sourceMode = "live-fe-sources";
-
-  try {
-    feData = await fetchRecentFeArticles({ days });
-  } catch (error) {
-    feData = {
-      ok: false,
-      articleCount: 0,
-      articles: [],
-      sourceStatus: [{ ok: false, error: error.message || "Unknown FE source error" }]
-    };
-  }
-
-  if (!feData.articles || !feData.articles.length) {
-    const cached = readCache();
-    if (cached && Array.isArray(cached.clusters) && cached.clusters.length) {
-      return {
-        ...cached,
-        ok: true,
-        sourceMode: forceLive ? "cached-fallback-after-refresh" : "cached-local-export",
-        servedAt: new Date().toISOString(),
-        note: forceLive
-          ? "Refresh attempted live FE fetch with Google NLP, but live FE returned no usable articles from this server. The latest good cached clusters are shown instead."
-          : "Live FE source was unavailable, so the page used the latest local cache."
-      };
-    }
-  }
+  const feData = await fetchRecentFeArticles({ days });
 
   const nlpResult = await enrichArticlesWithNlp(feData.articles || [], {
     forceNlp: options.useNlp
   });
 
   const clusters = buildClusters(nlpResult.articles, maxClusters, maxArticlesPerCluster);
-  if (!clusters.length) sourceMode = "no-live-data";
 
   return {
     ok: true,
     product: "FE Trending Clusters",
-    sourceMode,
+    sourceMode: clusters.length ? (feData.sourceMode || "live-fe-sources") : "no-live-data",
     sourceSummary: {
       feArticleSourceApi: "/api/fe-articles",
       clusterApi: "/api/trending-clusters",
       googleNlp: nlpResult.nlpStatus.enabled ? "enabled" : "fallback/off",
-      googleNlpCallsMade: nlpResult.nlpStatus.callsMade
+      googleNlpCallsMade: nlpResult.nlpStatus.callsMade,
+      refreshCooldownSeconds: getCooldownSeconds()
     },
     generatedAt: new Date().toISOString(),
     days,
@@ -323,6 +340,78 @@ async function getTrendingData(options = {}) {
     nlpStatus: nlpResult.nlpStatus,
     clusters
   };
+}
+
+async function getTrendingData(options = {}) {
+  const cache = readCache();
+  const requestedLiveRefresh = Boolean(options.forceLive);
+  const adminRefresh = Boolean(options.adminRefresh);
+
+  // Normal page loads should use cache first so they do not burn Google NLP calls.
+  if (!requestedLiveRefresh && cache) {
+    return serveCache(cache, "cached-local-export", {
+      note: "Served from latest cached clusters. Public page loads do not trigger Google NLP."
+    });
+  }
+
+  // Public refresh is allowed, but protected by a short cooldown.
+  if (requestedLiveRefresh && !adminRefresh) {
+    const slot = canUsePublicRefreshSlot();
+
+    if (!slot.allowed && cache) {
+      return serveCache(cache, "cached-public-refresh-cooldown", {
+        refreshStatus: {
+          attempted: true,
+          allowed: false,
+          waitSeconds: slot.waitSeconds,
+          message: `Fresh refresh is cooling down. Showing latest cached clusters. Try again in ${slot.waitSeconds} seconds.`
+        }
+      });
+    }
+  }
+
+  try {
+    const live = await runLiveRefresh(options);
+
+    if (live.clusters && live.clusters.length) {
+      return {
+        ...live,
+        refreshStatus: {
+          attempted: requestedLiveRefresh,
+          allowed: true,
+          adminRefresh,
+          message: "Live refresh completed."
+        }
+      };
+    }
+
+    if (cache) {
+      return serveCache(cache, requestedLiveRefresh ? "cached-fallback-after-refresh" : "cached-local-export", {
+        refreshStatus: {
+          attempted: requestedLiveRefresh,
+          allowed: true,
+          adminRefresh,
+          message: "Live refresh returned no usable articles, so the latest cached clusters are shown."
+        }
+      });
+    }
+
+    return live;
+  } catch (error) {
+    if (cache) {
+      return serveCache(cache, "cached-fallback-after-refresh-error", {
+        refreshStatus: {
+          attempted: requestedLiveRefresh,
+          allowed: true,
+          adminRefresh,
+          error: error.message || "Live refresh failed.",
+          message: "Live refresh failed, so the latest cached clusters are shown."
+        }
+      });
+    }
+
+    throw error;
+  }
 }
 
 async function handler(req, res) {
@@ -339,12 +428,16 @@ async function handler(req, res) {
   try {
     const requestUrl = new URL(req.url || "/api/trending-clusters", "http://localhost");
     const useNlpParam = requestUrl.searchParams.get("nlp");
+    const refreshSecret = process.env.REFRESH_SECRET || "";
+    const providedSecret = requestUrl.searchParams.get("refresh_secret") || req.headers["x-refresh-secret"] || "";
+    const adminRefresh = Boolean(refreshSecret && providedSecret && providedSecret === refreshSecret);
 
     const data = await getTrendingData({
       days: requestUrl.searchParams.get("days") || process.env.FE_LOOKBACK_DAYS || 3,
       maxClusters: requestUrl.searchParams.get("clusters") || process.env.FE_MAX_CLUSTERS || 12,
       maxArticlesPerCluster: requestUrl.searchParams.get("articles") || process.env.FE_MAX_ARTICLES_PER_CLUSTER || 12,
       forceLive: requestUrl.searchParams.get("forceLive") === "1",
+      adminRefresh,
       useNlp: useNlpParam === "1" ? true : useNlpParam === "0" ? false : undefined
     });
 
@@ -359,5 +452,3 @@ async function handler(req, res) {
 
 module.exports = handler;
 module.exports.getTrendingData = getTrendingData;
-
-

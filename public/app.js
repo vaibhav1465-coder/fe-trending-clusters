@@ -56,9 +56,10 @@ function addUtm(url, cluster) {
 }
 
 function renderStatus(data) {
-  const sourceLabel = data.sourceMode === "cached-local-export"
+  const sourceMode = String(data.sourceMode || "");
+  const sourceLabel = sourceMode.startsWith("cached")
     ? "Cached data"
-    : data.sourceMode === "no-live-data"
+    : sourceMode === "no-live-data"
       ? "No live data"
       : "Live FE sources";
 
@@ -248,6 +249,7 @@ async function loadData(force = false) {
 
 refreshBtn.addEventListener("click", () => loadData(true));
 loadData();
+
 
 
 
