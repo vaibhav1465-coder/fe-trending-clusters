@@ -1,10 +1,3691 @@
-﻿{
+{
   "ok": true,
   "product": "FE Trending Clusters",
-  "sourceMode": "empty-cache",
-  "generatedAt": null,
+  "sourceMode": "live-fe-sources",
+  "sourceSummary": {
+    "feArticleSourceApi": "/api/fe-articles",
+    "clusterApi": "/api/trending-clusters",
+    "googleNlp": "fallback/off",
+    "googleNlpCallsMade": 0
+  },
+  "generatedAt": "2026-07-09T06:03:25.558Z",
   "days": 3,
-  "articleCount": 0,
-  "clusterCount": 0,
-  "clusters": []
+  "articleCount": 143,
+  "clusterCount": 12,
+  "sourceStatus": [
+    {
+      "ok": false,
+      "error": "https://www.financialexpress.com/feed/ returned HTTP 410"
+    },
+    {
+      "ok": true,
+      "count": 0
+    },
+    {
+      "ok": true,
+      "count": 0
+    },
+    {
+      "ok": true,
+      "count": 0
+    },
+    {
+      "ok": true,
+      "count": 0
+    },
+    {
+      "ok": true,
+      "count": 0
+    },
+    {
+      "ok": true,
+      "count": 80
+    },
+    {
+      "ok": true,
+      "count": 115
+    },
+    {
+      "ok": true,
+      "count": 36
+    },
+    {
+      "ok": true,
+      "count": 31
+    },
+    {
+      "ok": true,
+      "count": 31
+    },
+    {
+      "ok": true,
+      "count": 31
+    },
+    {
+      "ok": false,
+      "error": "https://www.financialexpress.com/tech/ returned HTTP 404"
+    }
+  ],
+  "nlpStatus": {
+    "enabled": false,
+    "provider": "local-fallback",
+    "callsMade": 0,
+    "maxCallsAllowedThisRequest": 25,
+    "fallbackCount": 143,
+    "errors": []
+  },
+  "clusters": [
+    {
+      "id": "ai-stocks",
+      "name": "AI Stocks",
+      "description": "Recent AI, tech, semiconductor and IT services stories from Financial Express.",
+      "articleCount": 10,
+      "trendScore": 4000,
+      "nlpEntities": [
+        "CEO",
+        "Brand",
+        "Nitin Ahlawat",
+        "Toyota",
+        "India",
+        "TCS",
+        "Can",
+        "The",
+        "Will",
+        "June"
+      ],
+      "articles": [
+        {
+          "title": "'My car has refused to run on E20' - CEO says vehicle misfired on ethanol blend",
+          "url": "https://www.financialexpress.com/trending/my-car-has-refused-to-run-on-e20-ceo-says-vehicle-misfired-on-ethanol-blend/4287151/",
+          "publishedAt": "2026-07-09T05:52:00.000Z",
+          "summary": "Brand marketing consultant Nitin Ahlawat reported engine misfiring in his Toyota after using E20 petrol, raising concerns about ethanol-blended fuel in India amid government assurances of its safety.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Trending",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "CEO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Brand",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Nitin Ahlawat",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Toyota",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Trending",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "TCS shares down 40% in 1 year: Can Q1 earnings spark a recovery?",
+          "url": "https://www.financialexpress.com/market/tcs-shares-down-40-in-1-year-can-q1-earnings-spark-a-recovery-4287230/",
+          "publishedAt": "2026-07-09T05:50:50.000Z",
+          "summary": "TCS Q1 results today: The stock has fallen nearly 40% in the past year. Will the June quarter earnings change the Street's view? Here's what Kotak Institutional Equities and Axis Securities expect, key risks, dividend details, and what investors should watch.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "TCS",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Can",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "The",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Will",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "June",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Street",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Here",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Kotak Institutional Equities",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Regulatory delays cloud cargo airlines' shift to Navi Mumbai",
+          "url": "https://www.financialexpress.com/business/airlines-aviation-regulatory-delays-cloud-cargo-airlines-shift-to-navi-mumbai-4287225/",
+          "publishedAt": "2026-07-09T05:48:58.000Z",
+          "summary": "According to people aware of the developments, around four to five dedicated freighter operators, primarily from West Asia, Europe and Southeast Asia, are preparing to commence operations from NMIA from August 1, subject to receiving the necessary regulatory c",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Regulatory",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Navi Mumbai. According",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "West Asia",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Europe",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Southeast Asia",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "NMIA",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "August",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "All about JadePuffer and why world's first AI-ransomware attack needed a human",
+          "url": "https://www.financialexpress.com/life/technology-all-about-jadepuffer-and-why-worlds-first-ai-ransomware-attack-needed-a-human-4287211/",
+          "publishedAt": "2026-07-09T05:23:01.000Z",
+          "summary": "JadePuffer used AI to execute ransomware but still relied on humans for targets and infrastructure; learn what it means for cyber defence.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Life",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "JadePuffer",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "All",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "AI-ransomware",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Life",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "All out for 76: India's record 125-run defeat puts Shreyas Iyer's captaincy under spotlight",
+          "url": "https://www.financialexpress.com/sports/all-out-for-76-indias-record-125-run-defeat-puts-shreyas-iyers-captaincy-under-spotlight/4286360/",
+          "publishedAt": "2026-07-09T05:09:08.000Z",
+          "summary": "A 125-run defeat at Trent Bridge hands England a 2-0 series lead, leaving the Indian captain to brand the team's batting performance as \"atrocious.\"",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Sports",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "All",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Shreyas Iyer",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Trent Bridge",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "England",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Indian",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Sports",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Red alert in Delhi after heavy rainfall paralyses city, massive waterlogging in Noida and Ghaziabad",
+          "url": "https://www.financialexpress.com/business/infrastructure-red-alert-in-delhi-after-heavy-rainfall-paralyses-city-massive-waterlogging-in-noida-and-ghaziabad-4287189/",
+          "publishedAt": "2026-07-09T05:05:29.000Z",
+          "summary": "Heavy monsoon rains disrupted Delhi-NCR, with Delhi under red alert and Noida and Ghaziabad facing severe waterlogging.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Delhi",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Noida",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Red",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Ghaziabad. Heavy",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Delhi-NCR",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Ghaziabad",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Vegas-bound Southwest Boeing 737 makes emergency U-turn over Pacific Ocean - Here's why",
+          "url": "https://www.financialexpress.com/world-news/us-news/vegas-bound-southwest-boeing-737-makes-emergency-u-turn-over-pacific-ocean-heres-why/4287132/",
+          "publishedAt": "2026-07-09T04:50:24.000Z",
+          "summary": "A Southwest Airlines Boeing 737 MAX 8 flight from Hawaii to Las Vegas diverted to Honolulu after an in-flight emergency prompted a distress signal. No injuries reported; diversion due to a passenger's medical issue.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "World News",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Vegas-bound Southwest Boeing",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "U-turn",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Pacific Ocean",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Here",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "A Southwest Airlines Boeing",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "MAX",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Hawaii",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Las Vegas",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Jalandhar Cantt Station’s Rs 125-crore makeover: Air concourse, wider roof & better access",
+          "url": "https://www.financialexpress.com/business/railways-jalandhar-cantt-stations-rs-125-crore-makeover-air-concourse-wider-roof-better-access-4287156/",
+          "publishedAt": "2026-07-09T04:36:05.000Z",
+          "summary": "The Jalandhar Cantt Railway Station has been redeveloped with modern passenger amenities, a spacious air concourse, expanded platform roofing and enhanced accessibility.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Jalandhar Cantt Station",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Air",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "The Jalandhar Cantt Railway",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Station",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Goldman Sachs Top Pharma Picks: Piramal and Syngene may see upto 26% upside but Dr Reddy’s faces 21% downside",
+          "url": "https://www.financialexpress.com/market/goldman-sachs-top-pharma-picks-piramal-and-syngene-may-see-upto-26-upside-but-dr-reddys-faces-21-downsidenbsp-4287163/",
+          "publishedAt": "2026-07-09T04:31:55.000Z",
+          "summary": "Goldman Sachs has picked Piramal Pharma, Syngene and Divi's as its preferred pharma bets ahead of Q1FY27 earnings while warning that margin pressure and fading Revlimid gains could weigh on several peers.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Syngene",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Goldman Sachs Top Pharma",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Picks",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Piramal",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Dr Reddy",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Goldman Sachs",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Piramal Pharma",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Divi",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "PM Modi welcomes $500 mn Australian investment, calls for deeper ties amid 'supply chain disruption and energy crisis'",
+          "url": "https://www.financialexpress.com/business/news-pm-modi-welcomes-dollar-500-million-australian-investment-calls-for-deeper-ties-amid-supply-chain-disruption-energy-crisis-4287064/",
+          "publishedAt": "2026-07-09T03:59:11.000Z",
+          "summary": "AustralianSuper invested about AU$2.8 billion in India across infrastructure, equities and private markets.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "PM Modi",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Australian",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "AustralianSuper",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "finance-stocks",
+      "name": "Finance Stocks",
+      "description": "Banks, NBFCs, lending, deposits and financial services stock updates.",
+      "articleCount": 10,
+      "trendScore": 518,
+      "nlpEntities": [
+        "SBI Funds Management IPO",
+        "July",
+        "Check",
+        "OFS",
+        "Kevin Warsh",
+        "Hyun-Song Shin",
+        "Opinion",
+        "Premiumisation",
+        "Airtel",
+        "ARPU"
+      ],
+      "articles": [
+        {
+          "title": "SBI Funds Management IPO opens July 14: Check price band, valuation, other key details",
+          "url": "https://www.financialexpress.com/market/sbi-funds-management-ipo-opens-july-14-check-price-band-valuation-other-key-details-4287089/",
+          "publishedAt": "2026-07-09T02:28:34.000Z",
+          "summary": "SBI Funds Management IPO opens July 14 with a Rs 545-574 band and Rs 1.17 lakh crore valuation; check listing date, OFS details and key managers.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "SBI Funds Management IPO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "July",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Check",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "OFS",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "A tale of two central bankers",
+          "url": "https://www.financialexpress.com/opinion/a-tale-of-two-central-bankers/4286966/",
+          "publishedAt": "2026-07-08T18:07:04.000Z",
+          "summary": "Kevin Warsh and Hyun-Song Shin’s appointments may have come in very different circumstances, but their challenges are similar",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Opinion",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Kevin Warsh",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Hyun-Song Shin",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Opinion",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Premiumisation may lift telcos in Q1 despite tariff pause",
+          "url": "https://www.financialexpress.com/business/news/premiumisation-may-lift-telcos-in-q1-despite-tariff-pause/4286931/",
+          "publishedAt": "2026-07-08T17:24:43.000Z",
+          "summary": "Airtel seen leading on ARPU, margins, Jio banks subscriber additions; Vodafone Idea fund-raising in focus",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Premiumisation",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Airtel",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "ARPU",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Jio",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Vodafone Idea",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Results Preview: Auto, banks may power earnings; OMCs drag",
+          "url": "https://www.financialexpress.com/business/news/results-preview-auto-banks-may-power-earnings-omcs-drag/4286787/",
+          "publishedAt": "2026-07-08T15:09:05.000Z",
+          "summary": "Corporate earnings for the June quarter are projected to stay resilient, with Nifty 50 profits estimated to grow nearly 10% year-on-year.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Results Preview",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Auto",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "OMCs",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Corporate",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "June",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Nifty",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Explainer: Why three PSU general insurers are posting low solvency ratios",
+          "url": "https://www.financialexpress.com/business/news/explainer-why-three-psu-general-insurers-are-posting-low-solvency-ratios/4286713/",
+          "publishedAt": "2026-07-08T13:55:47.000Z",
+          "summary": "The Reserve Bank of India (RBI) has flagged three public sector general insurance companies as direct financial stability concerns after they breached the 150% mandatory solvency ratio for five straight quarters.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Explainer",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Why",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "PSU",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "The Reserve Bank",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "RBI",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Strong credit growth, stable asset quality to drive NBFCs’ Q1 earnings",
+          "url": "https://www.financialexpress.com/business/banking-finance/strong-credit-growth-stable-asset-quality-to-drive-nbfcs-q1-earnings/4286655/",
+          "publishedAt": "2026-07-08T13:10:03.000Z",
+          "summary": "Non-banking financial companies (NBFCs) are projected to deliver a healthy performance in Q1 FY27.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "NBFCs",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Strong",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Non-banking",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Credit cards lose sheen: Cibil",
+          "url": "https://www.financialexpress.com/business/banking-finance/credit-cards-lose-sheen-cibil/4286651/",
+          "publishedAt": "2026-07-08T12:54:08.000Z",
+          "summary": "According to TransUnion CIBIL's \"Beyond the Swipe\" report, credit cards' market share in India's unsecured loan space dropped from 56% to 38% over a decade. Banks are prioritizing higher balances, while small-ticket personal loans and UPI reshape the retail cr",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Credit",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Cibil. According",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "TransUnion CIBIL",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Beyond",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Swipe",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Banks",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "UPI",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "SBI Funds Management IPO: Why SBI and Amundi are monetising massive stakes & what changes for investors",
+          "url": "https://www.financialexpress.com/market/ipo-news-sbi-funds-management-ipo-why-sbi-and-amundi-are-monetising-massive-stakes-amp-what-changes-for-investors-4286532/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "SBI Funds Management IPO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Why SBI",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Amundi",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "'Recast of retail book in 6-8 months,' says Standard Chartered Bank's P D Singh",
+          "url": "https://www.financialexpress.com/business/banking-finance-exclusive-our-retail-transformation-will-be-complete-in-6-8-months-qampa-with-p-d-singh-ceo-standard-chartered-bank-4278416/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Recast",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Standard Chartered Bank",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "P D Singh. Open",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "SBI Funds Management IPO: India’s largest AMC doesn't own ‘SBI’ brand - How 2% royalty impacts margins",
+          "url": "https://www.financialexpress.com/market/sbi-funds-management-ipo-indias-largest-amc-doesnt-own-sbi-brand-how-2-royalty-impacts-margins-4286197/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/market/",
+          "sourceType": "html-page",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "SBI Funds Management IPO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "AMC",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "SBI",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "How",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ipo-watch",
+      "name": "IPO Watch",
+      "description": "IPO launches, GMP, subscription, allotment and listing updates.",
+      "articleCount": 6,
+      "trendScore": 378,
+      "nlpEntities": [
+        "SBI Funds Management IPO",
+        "July",
+        "Check",
+        "OFS",
+        "Kusumgar IPO",
+        "Day",
+        "GMP",
+        "Issue",
+        "Flipkart",
+        "Decision"
+      ],
+      "articles": [
+        {
+          "title": "SBI Funds Management IPO opens July 14: Check price band, valuation, other key details",
+          "url": "https://www.financialexpress.com/market/sbi-funds-management-ipo-opens-july-14-check-price-band-valuation-other-key-details-4287089/",
+          "publishedAt": "2026-07-09T02:28:34.000Z",
+          "summary": "SBI Funds Management IPO opens July 14 with a Rs 545-574 band and Rs 1.17 lakh crore valuation; check listing date, OFS details and key managers.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "SBI Funds Management IPO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "July",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Check",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "OFS",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Kusumgar IPO sees strong demand on Day 1: Issue subscribed 3.45x, GMP up 38%",
+          "url": "https://www.financialexpress.com/market/ipo-news/kusumgar-ipo-sees-strong-demand-on-day-1-issue-subscribed-3-45x-gmp-up-38/4286881/",
+          "publishedAt": "2026-07-08T16:25:46.000Z",
+          "summary": "Kusumgar IPO draws 3.45x bids on Day 1, with GMP near 38%; check price band, key dates and expert view.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Kusumgar IPO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Day",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "GMP",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Issue",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Flipkart picks standalone route for food delivery",
+          "url": "https://www.financialexpress.com/business/news/flipkart-picks-standalone-route-for-food-delivery/4286636/",
+          "publishedAt": "2026-07-08T12:49:24.000Z",
+          "summary": "Decision to skip ONDC is likely to delay launch as company gears up for IPO",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Flipkart",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Decision",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "ONDC",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "IPO. Business",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "SBI Funds Management IPO: Why SBI and Amundi are monetising massive stakes & what changes for investors",
+          "url": "https://www.financialexpress.com/market/ipo-news-sbi-funds-management-ipo-why-sbi-and-amundi-are-monetising-massive-stakes-amp-what-changes-for-investors-4286532/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "SBI Funds Management IPO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Why SBI",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Amundi",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Cult.fit IPO: Fitness platform files DRHP for Rs 950 crore fresh issue - 3 ‘must know’ details",
+          "url": "https://www.financialexpress.com/market/ipo-news/cult-fit-ipo-fitness-platform-files-drhp-for-rs-950-crore-fresh-issue-3-must-know-detailsnbsp/4285596/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Cult.fit IPO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Fitness",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "DRHP",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "SBI Funds Management IPO: India’s largest AMC doesn't own ‘SBI’ brand - How 2% royalty impacts margins",
+          "url": "https://www.financialexpress.com/market/sbi-funds-management-ipo-indias-largest-amc-doesnt-own-sbi-brand-how-2-royalty-impacts-margins-4286197/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/market/",
+          "sourceType": "html-page",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "SBI Funds Management IPO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "AMC",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "SBI",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "How",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mutual-funds",
+      "name": "Mutual Funds",
+      "description": "Mutual funds, SIP, NFO, fund performance and personal investing updates.",
+      "articleCount": 9,
+      "trendScore": 377,
+      "nlpEntities": [
+        "Domestic",
+        "FPIs",
+        "Assets",
+        "AUC",
+        "India",
+        "Why",
+        "Railway Ministry",
+        "The Railway Ministry",
+        "Quant",
+        "SIP"
+      ],
+      "articles": [
+        {
+          "title": "Domestic mutual fund holdings surpass FPIs for the first time",
+          "url": "https://www.financialexpress.com/market/domestic-mutual-fund-holdings-surpass-fpis-for-the-first-time-4286926/",
+          "publishedAt": "2026-07-08T17:11:43.000Z",
+          "summary": "Assets under custody (AUC) of domestic mutual funds in India surged to ₹76.41 lakh crore in June 2026, officially surpassing total foreign portfolio investor (FPI) holdings of ₹76.22 lakh crore for the first time.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Domestic",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "FPIs",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Assets",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "AUC",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "June",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "FPI",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Why are pantry cars still dirty? Railway Ministry sounds alarm as lapses continue despite repeated warnings",
+          "url": "https://www.financialexpress.com/business/railways-why-are-pantry-cars-still-dirty-railway-ministry-sounds-alarm-as-lapses-continue-despite-repeated-warnings-4286906/",
+          "publishedAt": "2026-07-08T16:56:44.000Z",
+          "summary": "The Railway Ministry has directed all zonal railways to strictly enforce pantry car cleaning and pest control norms after recurring complaints of unhygienic conditions, rodent infestations and improper waste disposal despite guidelines being in place since 201",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Why",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Railway Ministry",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "The Railway Ministry",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "5 Quant mutual funds lead their categories in 10-year SIP returns; here's how they beat peers",
+          "url": "https://www.financialexpress.com/money/mutual-funds/5-quant-mutual-funds-lead-their-categories-in-10-year-sip-returns-heres-how-they-beat-peers/4285595/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Quant",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "SIP",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Multi Cap vs Multi Asset Allocation Funds: Which mutual fund category should you choose in 2026?",
+          "url": "https://www.financialexpress.com/money/mutual-funds/multi-cap-vs-multi-asset-allocation-funds-which-mutual-fund-category-should-you-choose-in-2026/4285182/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Multi Cap",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Multi Asset Allocation Funds",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Which",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "5 Mutual Funds Based on Historical Performance in 2026",
+          "url": "https://www.financialexpress.com/money/insights/5-mutual-funds-based-on-historical-performance-in-2026/4285438/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Mutual Funds Based",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Historical Performance",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Nippon India Small Cap Fund vs. Bandhan Small Cap Fund: Which is better for your portfolio?",
+          "url": "https://www.financialexpress.com/money/insights/nippon-india-small-cap-fund-vs-bandhan-small-cap-fund-which-is-better-for-your-portfolio/4284122/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Nippon India Small Cap",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Fund",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Bandhan Small Cap Fund",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Which",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Top Retirement-Pension Funds",
+          "url": "https://www.financialexpress.com/mutual-funds/screener/top-funds-for-retirement/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Mutual Funds",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Top Retirement-Pension Funds. Open",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Mutual Funds",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Info Edge: Nomura sees 29% upside – Can Naukri growth outweigh AI threat in education segment?",
+          "url": "https://www.financialexpress.com/market/info-edge-nomura-sees-29-upside-can-naukri-growth-outweigh-ai-threat-in-education-segment-4286339/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/market/",
+          "sourceType": "html-page",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Info Edge",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Nomura",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Can Naukri",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Axis Mutual Fund launches an index fund tracking the Nifty50 equal weight index",
+          "url": "https://www.financialexpress.com/money/mutual-funds/axis-mutual-fund-launches-an-index-fund-tracking-the-nifty50-equal-weight-index/4284787/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/money/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Axis Mutual Fund",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "defence-stocks",
+      "name": "Defence Stocks",
+      "description": "Recent stories on defence companies, orders, contracts and stock movement.",
+      "articleCount": 9,
+      "trendScore": 351,
+      "nlpEntities": [
+        "JadePuffer",
+        "All",
+        "AI-ransomware",
+        "Life",
+        "China",
+        "India",
+        "Here",
+        "Kevin Warsh",
+        "Hyun-Song Shin",
+        "Opinion"
+      ],
+      "articles": [
+        {
+          "title": "All about JadePuffer and why world's first AI-ransomware attack needed a human",
+          "url": "https://www.financialexpress.com/life/technology-all-about-jadepuffer-and-why-worlds-first-ai-ransomware-attack-needed-a-human-4287211/",
+          "publishedAt": "2026-07-09T05:23:01.000Z",
+          "summary": "JadePuffer used AI to execute ransomware but still relied on humans for targets and infrastructure; learn what it means for cyber defence.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Life",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "JadePuffer",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "All",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "AI-ransomware",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Life",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "China controls 90% of shipping containers. India's Rs 10,000 crore challenge puts these 2 stocks in focus",
+          "url": "https://www.financialexpress.com/market/stock-insights/china-controls-90-of-shipping-containers-indias-rs-10000-crore-challenge-puts-these-2-stocks-in-focus/4286853/",
+          "publishedAt": "2026-07-09T00:00:00.000Z",
+          "summary": "China dominates 90% of global container production, but India is fighting back with a ₹10,000 crore manufacturing push. Here's how the country's bid for self-reliance could create opportunities across the container value chain.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "China",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Here",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "A tale of two central bankers",
+          "url": "https://www.financialexpress.com/opinion/a-tale-of-two-central-bankers/4286966/",
+          "publishedAt": "2026-07-08T18:07:04.000Z",
+          "summary": "Kevin Warsh and Hyun-Song Shin’s appointments may have come in very different circumstances, but their challenges are similar",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Opinion",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Kevin Warsh",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Hyun-Song Shin",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Opinion",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Why India must store sunshine",
+          "url": "https://www.financialexpress.com/opinion/why-india-must-store-sunshine/4286955/",
+          "publishedAt": "2026-07-08T18:00:59.000Z",
+          "summary": "India generates enough electricity, the next challenge is supplying it at the right time",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Opinion",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Why India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Opinion",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "India-US trade deal can reshape economy, delay only benefits China: Economist Surjit Bhalla",
+          "url": "https://www.financialexpress.com/trending/india-us-trade-deal-can-reshape-economy-delay-only-benefits-chinanbspeconomist-surjit-bhalla/4286920/",
+          "publishedAt": "2026-07-08T17:05:00.000Z",
+          "summary": "Economist Surjit Bhalla believes an India-US trade agreement could significantly improve India's long-term growth, competitiveness and global standing.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Trending",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "India-US",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "China",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Economist Surjit Bhalla. Economist",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Surjit Bhalla",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Trending",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Sourav Ganguly receives cricket's highest honour, confirms induction into ICC Hall of Fame on 54th birthday",
+          "url": "https://www.financialexpress.com/sports/sourav-ganguly-receives-crickets-highest-honour-confirms-induction-into-icc-hall-of-fame-on-54th-birthday/4286845/",
+          "publishedAt": "2026-07-08T16:19:24.000Z",
+          "summary": "Sourav Ganguly has been inducted into the ICC Hall of Fame on his 54th birthday, becoming the 10th Indian men's cricketer to receive cricket's highest honour.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Sports",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Sourav Ganguly",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "ICC Hall",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Fame",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Indian",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Sports",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Markets reel as West Asia crisis reignites",
+          "url": "https://www.financialexpress.com/market/markets-reel-as-west-asia-crisis-reignites-4286721/",
+          "publishedAt": "2026-07-08T14:09:47.000Z",
+          "summary": "Sensex tanks 1,700 points; Nifty slips below 23,900; investors lose ₹9 lakh crore in notional wealth; India VIX logs steepest single-day rise in 16 months",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Markets",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "West Asia",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Sensex",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Nifty",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India VIX",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "'They're bad people': Trump threatens immediate halt of trade with Spain over NATO defence spending dispute",
+          "url": "https://www.financialexpress.com/world-news/theyre-bad-people-trump-threatens-immediate-halt-of-trade-with-spain-over-nato-defence-spending-dispute/4286635/",
+          "publishedAt": "2026-07-08T12:48:02.000Z",
+          "summary": "US President Donald Trump has ordered an immediate halt to trade with Spain after criticising the country's defence spending and its stance on military cooperation during the Iran conflict.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "World News",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Spain",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "They",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Trump",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "NATO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "US President Donald Trump",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Iran",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "World News",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Gadkari defends E20 fuel rollout, challenges critics to prove claims",
+          "url": "https://www.financialexpress.com/india-news/gadkari-defends-e20-fuel-rollout-challenges-critics-to-prove-claims/4285828/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/india-news/",
+          "sourceType": "html-page",
+          "section": "India News",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Gadkari",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "tax-money",
+      "name": "Tax Money",
+      "description": "Income tax, ITR, EPFO, savings, loans, insurance and money planning.",
+      "articleCount": 10,
+      "trendScore": 326,
+      "nlpEntities": [
+        "Back",
+        "Renewed West Asia",
+        "India",
+        "Opinion",
+        "Claiming",
+        "Here",
+        "ITR",
+        "Where",
+        "Section",
+        "Can"
+      ],
+      "articles": [
+        {
+          "title": "Back to square one",
+          "url": "https://www.financialexpress.com/opinion/back-to-square-one-2/4286969/",
+          "publishedAt": "2026-07-08T18:32:21.000Z",
+          "summary": "Renewed West Asia tensions are a reminder that India’s best insurance lies in stronger investment &#038; job creation",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Opinion",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Back",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Renewed West Asia",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Opinion",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Claiming 80G deduction? Here's the new ITR disclosure requirement for taxpayers",
+          "url": "https://www.financialexpress.com/money/income-tax/claiming-80g-deduction-heres-the-new-itr-disclosure-requirement-for-taxpayers/4286782/",
+          "publishedAt": "2026-07-08T15:08:37.000Z",
+          "summary": "Where a taxpayer claims deduction under Section 80G, the prescribed reporting particulars should be completed accurately.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Claiming",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Here",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "ITR",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Where",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Section",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "E20 fuel and insurance claims: Can insurers reject your claim?",
+          "url": "https://www.financialexpress.com/money/insurance/e20-fuel-and-insurance-claims-can-insurers-reject-your-claim/4286637/",
+          "publishedAt": "2026-07-08T13:02:43.000Z",
+          "summary": "Vehicle owners should also note that a one-time accidental misfuelling is typically viewed very differently from repeated use of incompatible fuel.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Can",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Vehicle",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Credit cards lose sheen: Cibil",
+          "url": "https://www.financialexpress.com/business/banking-finance/credit-cards-lose-sheen-cibil/4286651/",
+          "publishedAt": "2026-07-08T12:54:08.000Z",
+          "summary": "According to TransUnion CIBIL's \"Beyond the Swipe\" report, credit cards' market share in India's unsecured loan space dropped from 56% to 38% over a decade. Banks are prioritizing higher balances, while small-ticket personal loans and UPI reshape the retail cr",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Credit",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Cibil. According",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "TransUnion CIBIL",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Beyond",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Swipe",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Banks",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "UPI",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Filing ITR-1? These 10 transactions may require you to switch to ITR-2 or ITR-3",
+          "url": "https://www.financialexpress.com/money/income-tax/filing-itr-1-these-10-transactions-may-require-you-to-switch-to-itr-2-or-itr-3/4286592/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "ITR-",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Filing ITR-",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "These",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Man skipped ITR filing, sentenced to 1-year jail 11 years later - why timely tax return filing matters",
+          "url": "https://www.financialexpress.com/money/man-skipped-itr-filing-sentenced-to-1-year-jail-11-years-later-why-timely-tax-return-filing-matters-4286559/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Man",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "ITR",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "The hidden cost of a debt-free home: When avoiding a loan hurts your finances more than interest?",
+          "url": "https://www.financialexpress.com/money/the-hidden-cost-of-a-debt-free-home-when-avoiding-a-loan-hurts-your-finances-more-than-interest-4286525/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "The",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "When",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "'Aiming to double GWP to Rs 5,000 crore in three years': Alok Rungta, MD & CEO of Generali Central Life Insurance",
+          "url": "https://www.financialexpress.com/business/news/aiming-to-double-gwp-to-rs-5000-crore-in-three-years-alok-rungta-md-amp-ceo-of-generali-central-life-insurance/4283091/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Aiming",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "GWP",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Alok Rungta",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "CEO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Generali Central Life Insurance",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "‘Optimistic about healthcare-insurance integration’: Sarbvir Singh, Joint Group CEO, PB Fintech",
+          "url": "https://www.financialexpress.com/business/news/optimistic-about-healthcare-insurance-integration-sarbvir-singh-joint-group-ceo-pb-fintech/4282151/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Optimistic",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Sarbvir Singh",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Joint Group CEO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "PB Fintech. Open",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "ITR filing AY 2026-27: 10 transactions that appear in AIS but may not attract any tax",
+          "url": "https://www.financialexpress.com/money/income-tax/itr-filing-ay-2026-27-10-transactions-that-appear-in-ais-but-may-not-attract-any-tax/4285669/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/money/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "ITR",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "AIS",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "market-today",
+      "name": "Market Today",
+      "description": "Nifty, Sensex, shares, top movers and daily market direction.",
+      "articleCount": 5,
+      "trendScore": 267,
+      "nlpEntities": [
+        "Nifty",
+        "TCS",
+        "Sensex",
+        "Tech",
+        "Share",
+        "Results Preview",
+        "Auto",
+        "OMCs",
+        "Corporate",
+        "June"
+      ],
+      "articles": [
+        {
+          "title": "Sensex climbs 500 points, Nifty at 24,000; Tech sees profitbooking ahead of TCS Q1",
+          "url": "https://www.financialexpress.com/market/sensex-nifty-50-stock-market-today-live-updates-india-us-iran-isreal-war-asia-nikkei-gold-silver-rate-crude-oil-09july2026-4287065/",
+          "publishedAt": "2026-07-09T01:31:47.000Z",
+          "summary": "Share market today, July 09: Track Sensex’s 300-point rise and Nifty near 24,000 as oil spikes on US-Iran tensions and tech profit-booking builds before TCS Q1.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Nifty",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "TCS",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Sensex",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Tech",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Share",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "July",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Track Sensex",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "US-Iran",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Results Preview: Auto, banks may power earnings; OMCs drag",
+          "url": "https://www.financialexpress.com/business/news/results-preview-auto-banks-may-power-earnings-omcs-drag/4286787/",
+          "publishedAt": "2026-07-08T15:09:05.000Z",
+          "summary": "Corporate earnings for the June quarter are projected to stay resilient, with Nifty 50 profits estimated to grow nearly 10% year-on-year.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Results Preview",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Auto",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "OMCs",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Corporate",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "June",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Nifty",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Markets reel as West Asia crisis reignites",
+          "url": "https://www.financialexpress.com/market/markets-reel-as-west-asia-crisis-reignites-4286721/",
+          "publishedAt": "2026-07-08T14:09:47.000Z",
+          "summary": "Sensex tanks 1,700 points; Nifty slips below 23,900; investors lose ₹9 lakh crore in notional wealth; India VIX logs steepest single-day rise in 16 months",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Markets",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "West Asia",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Sensex",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Nifty",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India VIX",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Why has the US stock market opened sharply lower?",
+          "url": "https://www.financialexpress.com/market/global-markets/us-stocks-set-to-open-sharply-lower-nasdaq-futures-plunge-over-1-2-dow-futures-down-500-points/4286557/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Why",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "7 reasons why the market is falling today: Nifty cracks nearly 2%, Sensex slides 1,600 points, small & midcaps sell-off",
+          "url": "https://www.financialexpress.com/market/7-reasons-why-the-market-is-falling-today-nifty-cracks-nearly-2-sensex-slides-1500-points-small-amp-midcaps-sell-off-4286398/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/market/",
+          "sourceType": "html-page",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Nifty",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Sensex",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "global-markets",
+      "name": "Global Markets",
+      "description": "US markets, Fed, crude oil, dollar, China and global cues.",
+      "articleCount": 8,
+      "trendScore": 232,
+      "nlpEntities": [
+        "India",
+        "API",
+        "China",
+        "Indian",
+        "Iran",
+        "Policy",
+        "El Nino",
+        "Apart",
+        "Middle East",
+        "Hormuz"
+      ],
+      "articles": [
+        {
+          "title": "India’s API self-reliance is still a long haul",
+          "url": "https://www.financialexpress.com/business/healthcare/indias-api-self-reliance-is-still-a-long-haul/4286991/",
+          "publishedAt": "2026-07-08T19:15:11.000Z",
+          "summary": "China still powers India’s strategic industries. A four-part series maps the dependencies — and the road out",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "API",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "China",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "US waiver blow may stall refiners’ plans, raise India’s oil risks",
+          "url": "https://www.financialexpress.com/policy/economy/us-waiver-blow-may-stall-refiners-plans-raise-indias-oil-risks/4286987/",
+          "publishedAt": "2026-07-08T19:06:31.000Z",
+          "summary": "Indian refiners' prospective medium-to-long-term strategies to negotiate favorable crude oil terms with Iran have hit a standstill after the US abruptly revoked energy sanctions waivers.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Policy",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Indian",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Iran",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Policy",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "El Nino weighs on rural auto demand",
+          "url": "https://www.financialexpress.com/business/industry/el-nino-weighs-on-rural-auto-demand/4286895/",
+          "publishedAt": "2026-07-08T16:38:42.000Z",
+          "summary": "Apart from weather-related risks, the industry is also contending with volatile input costs as geopolitical tensions in the Middle East keep crude oil and its derivatives on edge.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "El Nino",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Apart",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Middle East",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "India steps up diplomatic push with Iran to secure 9 tankers, 198 seafarers stuck in Hormuz: Report",
+          "url": "https://www.financialexpress.com/india-news/india-steps-up-diplomatic-push-with-iran-to-secure-9-tankers-198-seafarers-stuck-in-hormuz-report/4286794/",
+          "publishedAt": "2026-07-08T15:39:01.000Z",
+          "summary": "Before the conflict, the strait handled nearly 40% of India's crude oil shipments, around 60% of its LNG cargoes and close to 90% of its LPG supplies.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "India News",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Iran",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Hormuz",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Report. Before",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "LNG",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "LPG",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "FBI probes Argentine Football Federation finances in US over money laundering allegation: Report",
+          "url": "https://www.financialexpress.com/sports/fbi-probes-argentine-football-federation-finances-in-us-over-money-laundering-allegation-report/4286618/",
+          "publishedAt": "2026-07-08T14:49:11.000Z",
+          "summary": "The Argentine Football Association (AFA) is reportedly under FBI scrutiny over its financial operations in the United States, according to an Argentine media report. Investigators are said to be examining transactions worth hundreds of millions of dollars and",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Sports",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "FBI",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Argentine Football Federation",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Report. The Argentine Football",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Association",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "AFA",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "United States",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Argentine",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Investigators",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "SEBI updates FPI, FVCIs norms: Registration fee structure to be rupee-dominated",
+          "url": "https://www.financialexpress.com/business/industry/sebi-updates-fpi-fvcis-normsnbsp-registration-fee-structure-to-be-rupee-dominatednbsp/4286628/",
+          "publishedAt": "2026-07-08T12:44:00.000Z",
+          "summary": "SEBI has revised the registration fee structure for FPIs and FVCIs, replacing the US dollar-denominated fee with a rupee-based structure. The new rules will take effect after six months.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "SEBI",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "FVCIs",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "FPI",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Registration",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "FPIs",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "The",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "US Fed Minutes set to show hawkish lean, even as jobs weakness and oil surge fuel uncertainty",
+          "url": "https://www.financialexpress.com/market/global-markets/us-fed-fomc-meeting-minutes-job-market-weakness-meets-oil-price-spike-ahead-of-key-release/4286362/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "US Fed Minutes",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Crude Oil jumps 6% as Trump declares US-Iran ceasefire over; Brent near $79",
+          "url": "https://www.financialexpress.com/market/commodities/crude-oil-jumps-6-as-trump-declares-us-iran-ceasefire-over-brent-near-79nbsp/4286510/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/market/",
+          "sourceType": "html-page",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Crude Oil",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Trump",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "US-Iran",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Brent",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "gold-rate",
+      "name": "Gold Rate",
+      "description": "Gold prices, bullion, MCX and commodity market movement.",
+      "articleCount": 4,
+      "trendScore": 168,
+      "nlpEntities": [
+        "Syngene",
+        "Goldman Sachs Top Pharma",
+        "Picks",
+        "Piramal",
+        "Dr Reddy",
+        "Warren Buffett",
+        "Indian",
+        "Who",
+        "Which",
+        "BrahMos Missile Deal"
+      ],
+      "articles": [
+        {
+          "title": "Goldman Sachs Top Pharma Picks: Piramal and Syngene may see upto 26% upside but Dr Reddy’s faces 21% downside",
+          "url": "https://www.financialexpress.com/market/goldman-sachs-top-pharma-picks-piramal-and-syngene-may-see-upto-26-upside-but-dr-reddys-faces-21-downsidenbsp-4287163/",
+          "publishedAt": "2026-07-09T04:31:55.000Z",
+          "summary": "Goldman Sachs has picked Piramal Pharma, Syngene and Divi's as its preferred pharma bets ahead of Q1FY27 earnings while warning that margin pressure and fading Revlimid gains could weigh on several peers.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Syngene",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Goldman Sachs Top Pharma",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Picks",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Piramal",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Dr Reddy",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Goldman Sachs",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Piramal Pharma",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Divi",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Warren Buffett vs. Indian grandmothers: Who wins the great gold debate",
+          "url": "https://www.financialexpress.com/money/breakfast-with-buffett/warren-buffett-vs-indian-grandmothers-who-wins-the-great-gold-debate/4285089/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/money/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Warren Buffett",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Indian",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Who",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Which form of gold is actually the most tax-efficient after accounting for all taxes?",
+          "url": "https://www.financialexpress.com/money/income-tax/which-form-of-gold-is-actually-the-most-tax-efficient-after-accounting-for-all-taxes/4284654/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/money/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Which",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "BrahMos Missile Deal, UPI Integration & Investments: PM Modi Calls India-Indonesia Ties a 'Golden Chapter'",
+          "url": "https://www.financialexpress.com/business/defence/brahmos-missile-deal-upi-integration-amp-investments-pm-modi-calls-india-indonesia-ties-a-golden-chapter/4285386/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/india-news/",
+          "sourceType": "html-page",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "BrahMos Missile Deal",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "UPI Integration",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Investments",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "PM Modi Calls India-Indonesia",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Ties",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Golden Chapter",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "rbi-economy",
+      "name": "RBI Economy",
+      "description": "RBI policy, inflation, GDP, rate cuts, rupee and macro economy updates.",
+      "articleCount": 4,
+      "trendScore": 106,
+      "nlpEntities": [
+        "India-US",
+        "China",
+        "Economist Surjit Bhalla. Economist",
+        "Surjit Bhalla",
+        "India",
+        "Rupee",
+        "The Indian",
+        "Donald Trump",
+        "US-Iran",
+        "Policy"
+      ],
+      "articles": [
+        {
+          "title": "India-US trade deal can reshape economy, delay only benefits China: Economist Surjit Bhalla",
+          "url": "https://www.financialexpress.com/trending/india-us-trade-deal-can-reshape-economy-delay-only-benefits-chinanbspeconomist-surjit-bhalla/4286920/",
+          "publishedAt": "2026-07-08T17:05:00.000Z",
+          "summary": "Economist Surjit Bhalla believes an India-US trade agreement could significantly improve India's long-term growth, competitiveness and global standing.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Trending",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "India-US",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "China",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Economist Surjit Bhalla. Economist",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Surjit Bhalla",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Trending",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Rupee logs biggest monthly decline on higher oil prices",
+          "url": "https://www.financialexpress.com/policy/economy/rupee-logs-biggest-monthly-decline-on-higher-oil-prices/4286685/",
+          "publishedAt": "2026-07-08T13:30:03.000Z",
+          "summary": "The Indian rupee fell 59 paise to close at 95.55 against the US dollar following Donald Trump's declaration that the US-Iran interim ceasefire is over.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Policy",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Rupee",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "The Indian",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Donald Trump",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "US-Iran",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Policy",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "SEBI updates FPI, FVCIs norms: Registration fee structure to be rupee-dominated",
+          "url": "https://www.financialexpress.com/business/industry/sebi-updates-fpi-fvcis-normsnbsp-registration-fee-structure-to-be-rupee-dominatednbsp/4286628/",
+          "publishedAt": "2026-07-08T12:44:00.000Z",
+          "summary": "SEBI has revised the registration fee structure for FPIs and FVCIs, replacing the US dollar-denominated fee with a rupee-based structure. The new rules will take effect after six months.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "SEBI",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "FVCIs",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "FPI",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Registration",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "FPIs",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "The",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Parenting inflation: Why raising children has become more expensive than ever",
+          "url": "https://www.financialexpress.com/money/parenting-inflation-why-raising-children-has-become-more-expensive-than-ever-4285699/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/money/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Parenting",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Why",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "it-stocks",
+      "name": "IT Stocks",
+      "description": "IT services, software, tech earnings and company movement.",
+      "articleCount": 2,
+      "trendScore": 50,
+      "nlpEntities": [
+        "TCS",
+        "Can",
+        "The",
+        "Will",
+        "June",
+        "LIVE",
+        "Will Rupee",
+        "Dividend",
+        "Results LIVE"
+      ],
+      "articles": [
+        {
+          "title": "TCS shares down 40% in 1 year: Can Q1 earnings spark a recovery?",
+          "url": "https://www.financialexpress.com/market/tcs-shares-down-40-in-1-year-can-q1-earnings-spark-a-recovery-4287230/",
+          "publishedAt": "2026-07-09T05:50:50.000Z",
+          "summary": "TCS Q1 results today: The stock has fallen nearly 40% in the past year. Will the June quarter earnings change the Street's view? Here's what Kotak Institutional Equities and Axis Securities expect, key risks, dividend details, and what investors should watch.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Market",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "TCS",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Can",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "The",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Will",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "June",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Street",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Here",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Kotak Institutional Equities",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "TCS Q1FY27 earnings LIVE: Will Rupee tailwinds save margins amid wage hikes & AI pricing pressure? Dividend today",
+          "url": "https://www.financialexpress.com/business/industry-tcs-q1-fy27-results-live-updates-ai-deal-wins-revenue-growth-profit-rupee-depreciation-4286908/",
+          "publishedAt": "2026-07-09T03:28:16.000Z",
+          "summary": "TCS Q1 FY27 Results LIVE: Tata Consultancy Services is expected to report a subdued first quarter. Will TCS earning beat estimates?",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "TCS",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "LIVE",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Will Rupee",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Dividend",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Results LIVE",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Tata Consultancy Services",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Will TCS",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "topic-india",
+      "name": "India",
+      "description": "Recent Financial Express stories mentioning India.",
+      "articleCount": 2,
+      "trendScore": 30,
+      "nlpEntities": [
+        "India",
+        "GWh",
+        "GWh. According",
+        "India BESS Market Review",
+        "IESW",
+        "Truecaller CEO. India",
+        "Life"
+      ],
+      "articles": [
+        {
+          "title": "India’s storage tender pipeline hits 260 GWh, but cell capacity lags at 2 GWh",
+          "url": "https://www.financialexpress.com/business/industry/indias-storage-tender-pipeline-hits-260-gwh-but-cell-capacity-lags-at-2-gwh/4286755/",
+          "publishedAt": "2026-07-08T14:49:03.000Z",
+          "summary": "According to the India BESS Market Review released at IESW 2026, India's energy storage tender pipeline has ballooned to 260 GWh.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "GWh",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "GWh. According",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India BESS Market Review",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "IESW",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "GWh.. Business",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "'India's spam call problem is only going to get worse,' says Truecaller CEO",
+          "url": "https://www.financialexpress.com/life/technology-indias-spam-call-problem-is-only-going-to-get-worse-says-truecaller-ceo-4284021/",
+          "publishedAt": "2026-07-08T12:56:01.000Z",
+          "summary": "India's spam intensity stands at 66%, placing it among the five worst-affected markets globally.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Life",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Truecaller CEO. India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Life",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
 }
