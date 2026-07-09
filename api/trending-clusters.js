@@ -283,15 +283,17 @@ async function getTrendingData(options = {}) {
     };
   }
 
-  if ((!feData.articles || !feData.articles.length) && !forceLive) {
+  if (!feData.articles || !feData.articles.length) {
     const cached = readCache();
     if (cached && Array.isArray(cached.clusters) && cached.clusters.length) {
       return {
         ...cached,
         ok: true,
-        sourceMode: "cached-local-export",
+        sourceMode: forceLive ? "cached-fallback-after-refresh" : "cached-local-export",
         servedAt: new Date().toISOString(),
-        note: "Live FE source was unavailable, so the page used the latest local cache."
+        note: forceLive
+          ? "Refresh attempted live FE fetch with Google NLP, but live FE returned no usable articles from this server. The latest good cached clusters are shown instead."
+          : "Live FE source was unavailable, so the page used the latest local cache."
       };
     }
   }
@@ -357,3 +359,4 @@ async function handler(req, res) {
 
 module.exports = handler;
 module.exports.getTrendingData = getTrendingData;
+
