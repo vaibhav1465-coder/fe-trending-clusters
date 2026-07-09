@@ -1,8 +1,8 @@
-﻿{
+{
   "name": "fe-trending-clusters",
   "version": "1.1.0",
   "private": true,
-  "description": "Financial Express style trending cluster chips using recent FE articles and optional Google NLP enrichment.",
+  "description": "Financial Express style trending cluster chips using recent FE articles and Google NLP enrichment.",
   "scripts": {
     "dev": "node server.js",
     "start": "node server.js",
