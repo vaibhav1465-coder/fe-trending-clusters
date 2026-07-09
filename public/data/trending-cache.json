@@ -8,9 +8,9 @@
     "googleNlp": "enabled",
     "googleNlpCallsMade": 25
   },
-  "generatedAt": "2026-07-09T10:29:33.957Z",
+  "generatedAt": "2026-07-09T11:22:19.618Z",
   "days": 3,
-  "articleCount": 137,
+  "articleCount": 135,
   "clusterCount": 12,
   "sourceStatus": [
     {
@@ -47,7 +47,7 @@
     },
     {
       "ok": true,
-      "count": 36
+      "count": 35
     },
     {
       "ok": true,
@@ -71,7 +71,7 @@
     "provider": "google-cloud-natural-language",
     "callsMade": 25,
     "maxCallsAllowedThisRequest": 25,
-    "fallbackCount": 112,
+    "fallbackCount": 110,
     "errors": []
   },
   "clusters": [
@@ -80,20 +80,196 @@
       "name": "AI Stocks",
       "description": "Recent AI, tech, semiconductor and IT services stories from Financial Express.",
       "articleCount": 12,
-      "trendScore": 4080,
+      "trendScore": 3920,
       "nlpEntities": [
-        "triggers",
-        "gains",
-        "Sensex",
-        "Nifty",
-        "crude concerns",
-        "filing",
-        "ITR",
-        "returns",
-        "momentum",
-        "taxpayers"
+        "growth",
+        "world",
+        "India",
+        "investments",
+        "report",
+        "track",
+        "account",
+        "EPF",
+        "feature",
+        "service history feature"
       ],
       "articles": [
+        {
+          "title": "India posts world's fastest growth in intangible investments, touches $78.2 billion: Piyush Goyal cites WIPO report",
+          "url": "https://www.financialexpress.com/policy/economy/india-posts-worlds-fastest-growth-in-intangible-investments-touches-78-2-billion-piyush-goyal-cites-wipo-report/4287500/",
+          "publishedAt": "2026-07-09T10:45:01.000Z",
+          "summary": "The minister attributed the growth to sustained policy reforms, digital transformation and continued support for startups under the leadership of Prime Minister Narendra Modi.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Policy",
+          "categories": [],
+          "nlp": {
+            "language": "en",
+            "entities": [
+              {
+                "name": "growth",
+                "type": "EVENT",
+                "salience": 0.2375,
+                "mentionCount": 1
+              },
+              {
+                "name": "world",
+                "type": "LOCATION",
+                "salience": 0.2114,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "ORGANIZATION",
+                "salience": 0.1511,
+                "mentionCount": 1
+              },
+              {
+                "name": "investments",
+                "type": "OTHER",
+                "salience": 0.085,
+                "mentionCount": 1
+              },
+              {
+                "name": "report",
+                "type": "WORK_OF_ART",
+                "salience": 0.0581,
+                "mentionCount": 1
+              },
+              {
+                "name": "Piyush Goyal",
+                "type": "PERSON",
+                "salience": 0.0347,
+                "mentionCount": 1
+              },
+              {
+                "name": "WIPO",
+                "type": "ORGANIZATION",
+                "salience": 0.0347,
+                "mentionCount": 1
+              },
+              {
+                "name": "Narendra Modi",
+                "type": "PERSON",
+                "salience": 0.0346,
+                "mentionCount": 2
+              },
+              {
+                "name": "minister",
+                "type": "PERSON",
+                "salience": 0.0325,
+                "mentionCount": 1
+              },
+              {
+                "name": "growth",
+                "type": "OTHER",
+                "salience": 0.0325,
+                "mentionCount": 1
+              },
+              {
+                "name": "policy reforms",
+                "type": "OTHER",
+                "salience": 0.0262,
+                "mentionCount": 1
+              },
+              {
+                "name": "leadership",
+                "type": "OTHER",
+                "salience": 0.0198,
+                "mentionCount": 1
+              }
+            ],
+            "provider": "google-cloud-natural-language"
+          }
+        },
+        {
+          "title": "Lost track of your old EPF account? Here's how EPFO's new service history feature can help",
+          "url": "https://www.financialexpress.com/money/lost-track-of-your-old-epf-account-heres-how-epfos-new-service-history-feature-can-help-4287484/",
+          "publishedAt": "2026-07-09T10:41:37.000Z",
+          "summary": "The feature is intended to provide members with a single, authenticated record of their employment and provident fund service, making it easier to verify career history, identify discrepancies, and support claim processing.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "language": "en",
+            "entities": [
+              {
+                "name": "track",
+                "type": "WORK_OF_ART",
+                "salience": 0.2247,
+                "mentionCount": 1
+              },
+              {
+                "name": "account",
+                "type": "OTHER",
+                "salience": 0.2247,
+                "mentionCount": 1
+              },
+              {
+                "name": "EPF",
+                "type": "ORGANIZATION",
+                "salience": 0.1372,
+                "mentionCount": 2
+              },
+              {
+                "name": "feature",
+                "type": "OTHER",
+                "salience": 0.0799,
+                "mentionCount": 1
+              },
+              {
+                "name": "service history feature",
+                "type": "OTHER",
+                "salience": 0.0565,
+                "mentionCount": 1
+              },
+              {
+                "name": "members",
+                "type": "PERSON",
+                "salience": 0.0547,
+                "mentionCount": 1
+              },
+              {
+                "name": "single",
+                "type": "WORK_OF_ART",
+                "salience": 0.0297,
+                "mentionCount": 1
+              },
+              {
+                "name": "record",
+                "type": "OTHER",
+                "salience": 0.0273,
+                "mentionCount": 1
+              },
+              {
+                "name": "employment",
+                "type": "OTHER",
+                "salience": 0.0273,
+                "mentionCount": 1
+              },
+              {
+                "name": "career history",
+                "type": "OTHER",
+                "salience": 0.0234,
+                "mentionCount": 1
+              },
+              {
+                "name": "discrepancies",
+                "type": "OTHER",
+                "salience": 0.0206,
+                "mentionCount": 1
+              },
+              {
+                "name": "support",
+                "type": "OTHER",
+                "salience": 0.0144,
+                "mentionCount": 1
+              }
+            ],
+            "provider": "google-cloud-natural-language"
+          }
+        },
         {
           "title": "7 structural triggers powering gains for Sensex, Nifty today",
           "url": "https://www.financialexpress.com/market/sensex-surges-500-points-nifty-above-24000-7-structural-triggers-powering-gains-on-dalal-street-4287407/",
@@ -949,176 +1125,6 @@
             ],
             "provider": "google-cloud-natural-language"
           }
-        },
-        {
-          "title": "Onam 2026 Special Trains: Southern Railway announces services on Mangaluru-Chennai, Thiruvananthapuram-Tambaram routes - Full Schedule",
-          "url": "https://www.financialexpress.com/business/railways-onam-2026-special-trains-southern-railway-announces-services-on-mangaluru-chennai-thiruvananthapuram-tambaram-routes-full-schedule-4287292/",
-          "publishedAt": "2026-07-09T07:09:40.000Z",
-          "summary": "Southern Railways introduces Onam Special trains between Mangaluru Central-Chennai Egmore and Thiruvananthapuram Central-Tambaram from July to September 2026 for festival travel convenience.",
-          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
-          "sourceType": "wp-rest",
-          "section": "Business",
-          "categories": [],
-          "nlp": {
-            "language": "en",
-            "entities": [
-              {
-                "name": "services",
-                "type": "OTHER",
-                "salience": 0.3139,
-                "mentionCount": 1
-              },
-              {
-                "name": "Onam 2026 Special Trains: Southern Railway",
-                "type": "WORK_OF_ART",
-                "salience": 0.1429,
-                "mentionCount": 1
-              },
-              {
-                "name": "routes",
-                "type": "LOCATION",
-                "salience": 0.0811,
-                "mentionCount": 1
-              },
-              {
-                "name": "Chennai",
-                "type": "LOCATION",
-                "salience": 0.0809,
-                "mentionCount": 1
-              },
-              {
-                "name": "Mangaluru",
-                "type": "LOCATION",
-                "salience": 0.0809,
-                "mentionCount": 1
-              },
-              {
-                "name": "Tambaram",
-                "type": "LOCATION",
-                "salience": 0.0591,
-                "mentionCount": 2
-              },
-              {
-                "name": "trains",
-                "type": "OTHER",
-                "salience": 0.0551,
-                "mentionCount": 1
-              },
-              {
-                "name": "Thiruvananthapuram",
-                "type": "LOCATION",
-                "salience": 0.0551,
-                "mentionCount": 1
-              },
-              {
-                "name": "Southern Railways",
-                "type": "ORGANIZATION",
-                "salience": 0.027,
-                "mentionCount": 1
-              },
-              {
-                "name": "Onam Special",
-                "type": "OTHER",
-                "salience": 0.0248,
-                "mentionCount": 1
-              },
-              {
-                "name": "Mangaluru Central",
-                "type": "LOCATION",
-                "salience": 0.0248,
-                "mentionCount": 1
-              },
-              {
-                "name": "festival travel convenience",
-                "type": "OTHER",
-                "salience": 0.0195,
-                "mentionCount": 1
-              }
-            ],
-            "provider": "google-cloud-natural-language"
-          }
-        },
-        {
-          "title": "Hyderabad–Tamil Nadu gets fresh connectivity boost: Cherlapalli-Trichy special train converted to a permanent service - Schedule inside",
-          "url": "https://www.financialexpress.com/business/railways-hyderabadtamil-nadu-gets-fresh-connectivity-boost-cherlapalli-trichy-special-train-converted-to-a-permanent-service-schedule-inside-4287249/",
-          "publishedAt": "2026-07-09T06:26:38.000Z",
-          "summary": "Indian Railways converts special train service running between Cherlapalli in Hyderabad and Tiruchchirappalli (Trichy) in Tamil Nadu into a permanent express train service.",
-          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
-          "sourceType": "wp-rest",
-          "section": "Business",
-          "categories": [],
-          "nlp": {
-            "language": "en",
-            "entities": [
-              {
-                "name": "Tamil Nadu",
-                "type": "LOCATION",
-                "salience": 0.2261,
-                "mentionCount": 2
-              },
-              {
-                "name": "Hyderabad",
-                "type": "LOCATION",
-                "salience": 0.1389,
-                "mentionCount": 2
-              },
-              {
-                "name": "connectivity boost",
-                "type": "OTHER",
-                "salience": 0.1315,
-                "mentionCount": 1
-              },
-              {
-                "name": "train",
-                "type": "OTHER",
-                "salience": 0.1114,
-                "mentionCount": 1
-              },
-              {
-                "name": "service",
-                "type": "OTHER",
-                "salience": 0.1114,
-                "mentionCount": 1
-              },
-              {
-                "name": "Cherlapalli-Trichy",
-                "type": "ORGANIZATION",
-                "salience": 0.0897,
-                "mentionCount": 1
-              },
-              {
-                "name": "train service",
-                "type": "OTHER",
-                "salience": 0.0507,
-                "mentionCount": 1
-              },
-              {
-                "name": "Cherlapalli",
-                "type": "PERSON",
-                "salience": 0.0275,
-                "mentionCount": 1
-              },
-              {
-                "name": "train service",
-                "type": "OTHER",
-                "salience": 0.0269,
-                "mentionCount": 1
-              },
-              {
-                "name": "Indian Railways",
-                "type": "ORGANIZATION",
-                "salience": 0.0264,
-                "mentionCount": 1
-              },
-              {
-                "name": "Business",
-                "type": "OTHER",
-                "salience": 0.0215,
-                "mentionCount": 1
-              }
-            ],
-            "provider": "google-cloud-natural-language"
-          }
         }
       ]
     },
@@ -1126,21 +1132,109 @@
       "id": "ipo-watch",
       "name": "IPO Watch",
       "description": "IPO launches, GMP, subscription, allotment and listing updates.",
-      "articleCount": 7,
-      "trendScore": 441,
+      "articleCount": 8,
+      "trendScore": 506,
       "nlpEntities": [
+        "growth",
+        "world",
+        "India",
+        "investments",
+        "report",
         "IPO",
         "SK Hynix",
         "stock",
         "UBS",
-        "Korean",
-        "SpaceX",
-        "Jeremy Grantham",
-        "Billionaire investor",
-        "craziest",
-        "Monsoon deficit"
+        "Korean"
       ],
       "articles": [
+        {
+          "title": "India posts world's fastest growth in intangible investments, touches $78.2 billion: Piyush Goyal cites WIPO report",
+          "url": "https://www.financialexpress.com/policy/economy/india-posts-worlds-fastest-growth-in-intangible-investments-touches-78-2-billion-piyush-goyal-cites-wipo-report/4287500/",
+          "publishedAt": "2026-07-09T10:45:01.000Z",
+          "summary": "The minister attributed the growth to sustained policy reforms, digital transformation and continued support for startups under the leadership of Prime Minister Narendra Modi.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Policy",
+          "categories": [],
+          "nlp": {
+            "language": "en",
+            "entities": [
+              {
+                "name": "growth",
+                "type": "EVENT",
+                "salience": 0.2375,
+                "mentionCount": 1
+              },
+              {
+                "name": "world",
+                "type": "LOCATION",
+                "salience": 0.2114,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "ORGANIZATION",
+                "salience": 0.1511,
+                "mentionCount": 1
+              },
+              {
+                "name": "investments",
+                "type": "OTHER",
+                "salience": 0.085,
+                "mentionCount": 1
+              },
+              {
+                "name": "report",
+                "type": "WORK_OF_ART",
+                "salience": 0.0581,
+                "mentionCount": 1
+              },
+              {
+                "name": "Piyush Goyal",
+                "type": "PERSON",
+                "salience": 0.0347,
+                "mentionCount": 1
+              },
+              {
+                "name": "WIPO",
+                "type": "ORGANIZATION",
+                "salience": 0.0347,
+                "mentionCount": 1
+              },
+              {
+                "name": "Narendra Modi",
+                "type": "PERSON",
+                "salience": 0.0346,
+                "mentionCount": 2
+              },
+              {
+                "name": "minister",
+                "type": "PERSON",
+                "salience": 0.0325,
+                "mentionCount": 1
+              },
+              {
+                "name": "growth",
+                "type": "OTHER",
+                "salience": 0.0325,
+                "mentionCount": 1
+              },
+              {
+                "name": "policy reforms",
+                "type": "OTHER",
+                "salience": 0.0262,
+                "mentionCount": 1
+              },
+              {
+                "name": "leadership",
+                "type": "OTHER",
+                "salience": 0.0198,
+                "mentionCount": 1
+              }
+            ],
+            "provider": "google-cloud-natural-language"
+          }
+        },
         {
           "title": "SK Hynix $28 Billion IPO Oversubscribed: Lists July 10 as UBS recommends buying ADR over Korean stock",
           "url": "https://www.financialexpress.com/market/global-markets/sk-hynix-28-billion-ipo-oversubscribed-lists-july-10-as-ubs-recommends-buying-adr-over-korean-stock/4287364/",
@@ -1583,8 +1677,8 @@
       "id": "mutual-funds",
       "name": "Mutual Funds",
       "description": "Mutual funds, SIP, NFO, fund performance and personal investing updates.",
-      "articleCount": 9,
-      "trendScore": 415,
+      "articleCount": 8,
+      "trendScore": 394,
       "nlpEntities": [
         "cap funds",
         "schemes",
@@ -1965,10 +2059,537 @@
               }
             ]
           }
+        }
+      ]
+    },
+    {
+      "id": "tax-money",
+      "name": "Tax Money",
+      "description": "Income tax, ITR, EPFO, savings, loans, insurance and money planning.",
+      "articleCount": 12,
+      "trendScore": 392,
+      "nlpEntities": [
+        "track",
+        "account",
+        "EPF",
+        "feature",
+        "service history feature",
+        "portfolio",
+        "health insurance",
+        "people",
+        "investment portfolio",
+        "pace"
+      ],
+      "articles": [
+        {
+          "title": "Lost track of your old EPF account? Here's how EPFO's new service history feature can help",
+          "url": "https://www.financialexpress.com/money/lost-track-of-your-old-epf-account-heres-how-epfos-new-service-history-feature-can-help-4287484/",
+          "publishedAt": "2026-07-09T10:41:37.000Z",
+          "summary": "The feature is intended to provide members with a single, authenticated record of their employment and provident fund service, making it easier to verify career history, identify discrepancies, and support claim processing.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "language": "en",
+            "entities": [
+              {
+                "name": "track",
+                "type": "WORK_OF_ART",
+                "salience": 0.2247,
+                "mentionCount": 1
+              },
+              {
+                "name": "account",
+                "type": "OTHER",
+                "salience": 0.2247,
+                "mentionCount": 1
+              },
+              {
+                "name": "EPF",
+                "type": "ORGANIZATION",
+                "salience": 0.1372,
+                "mentionCount": 2
+              },
+              {
+                "name": "feature",
+                "type": "OTHER",
+                "salience": 0.0799,
+                "mentionCount": 1
+              },
+              {
+                "name": "service history feature",
+                "type": "OTHER",
+                "salience": 0.0565,
+                "mentionCount": 1
+              },
+              {
+                "name": "members",
+                "type": "PERSON",
+                "salience": 0.0547,
+                "mentionCount": 1
+              },
+              {
+                "name": "single",
+                "type": "WORK_OF_ART",
+                "salience": 0.0297,
+                "mentionCount": 1
+              },
+              {
+                "name": "record",
+                "type": "OTHER",
+                "salience": 0.0273,
+                "mentionCount": 1
+              },
+              {
+                "name": "employment",
+                "type": "OTHER",
+                "salience": 0.0273,
+                "mentionCount": 1
+              },
+              {
+                "name": "career history",
+                "type": "OTHER",
+                "salience": 0.0234,
+                "mentionCount": 1
+              },
+              {
+                "name": "discrepancies",
+                "type": "OTHER",
+                "salience": 0.0206,
+                "mentionCount": 1
+              },
+              {
+                "name": "support",
+                "type": "OTHER",
+                "salience": 0.0144,
+                "mentionCount": 1
+              }
+            ],
+            "provider": "google-cloud-natural-language"
+          }
         },
         {
-          "title": "Multi Cap vs Multi Asset Allocation Funds: Which mutual fund category should you choose in 2026?",
-          "url": "https://www.financialexpress.com/money/mutual-funds/multi-cap-vs-multi-asset-allocation-funds-which-mutual-fund-category-should-you-choose-in-2026/4285182/",
+          "title": "Your portfolio has changed over the years. Has your health insurance?",
+          "url": "https://www.financialexpress.com/money/your-portfolio-has-changed-over-the-years-has-your-health-insurance-4287391/",
+          "publishedAt": "2026-07-09T10:36:58.000Z",
+          "summary": "Your investment portfolio may have grown with every salary hike, but has your health insurance kept pace? Many people continue with the same health cover they bought years ago, even as medical costs, family responsibilities, and income rise. Here's why reviewi",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "language": "en",
+            "entities": [
+              {
+                "name": "portfolio",
+                "type": "OTHER",
+                "salience": 0.3644,
+                "mentionCount": 1
+              },
+              {
+                "name": "health insurance",
+                "type": "OTHER",
+                "salience": 0.2081,
+                "mentionCount": 2
+              },
+              {
+                "name": "people",
+                "type": "PERSON",
+                "salience": 0.1108,
+                "mentionCount": 1
+              },
+              {
+                "name": "investment portfolio",
+                "type": "OTHER",
+                "salience": 0.0658,
+                "mentionCount": 1
+              },
+              {
+                "name": "pace",
+                "type": "OTHER",
+                "salience": 0.0422,
+                "mentionCount": 1
+              },
+              {
+                "name": "salary hike",
+                "type": "EVENT",
+                "salience": 0.0417,
+                "mentionCount": 1
+              },
+              {
+                "name": "health cover",
+                "type": "OTHER",
+                "salience": 0.0386,
+                "mentionCount": 1
+              },
+              {
+                "name": "costs",
+                "type": "OTHER",
+                "salience": 0.0292,
+                "mentionCount": 1
+              },
+              {
+                "name": "family responsibilities",
+                "type": "OTHER",
+                "salience": 0.0292,
+                "mentionCount": 1
+              },
+              {
+                "name": "income rise",
+                "type": "OTHER",
+                "salience": 0.0292,
+                "mentionCount": 1
+              },
+              {
+                "name": "reviewi",
+                "type": "OTHER",
+                "salience": 0.0204,
+                "mentionCount": 1
+              },
+              {
+                "name": "Money",
+                "type": "OTHER",
+                "salience": 0.0204,
+                "mentionCount": 1
+              }
+            ],
+            "provider": "google-cloud-natural-language"
+          }
+        },
+        {
+          "title": "The Real Cost of Letting a Chatbot Calculate Your Tax Return",
+          "url": "https://www.financialexpress.com/money/income-tax/the-real-cost-of-letting-a-chatbot-calculate-your-tax-return/4287470/",
+          "publishedAt": "2026-07-09T10:13:39.000Z",
+          "summary": "Countless returns have already been filed by people who simply trusted the chatbot's first answer. That group worries me most. A bad return doesn't announce itself on filing day. It surfaces months later as a notice or a missing refund.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "language": "en",
+            "entities": [
+              {
+                "name": "Chatbot",
+                "type": "OTHER",
+                "salience": 0.433,
+                "mentionCount": 1
+              },
+              {
+                "name": "Real Cost",
+                "type": "OTHER",
+                "salience": 0.1649,
+                "mentionCount": 1
+              },
+              {
+                "name": "people",
+                "type": "PERSON",
+                "salience": 0.0897,
+                "mentionCount": 1
+              },
+              {
+                "name": "returns",
+                "type": "OTHER",
+                "salience": 0.0656,
+                "mentionCount": 1
+              },
+              {
+                "name": "Tax Return",
+                "type": "OTHER",
+                "salience": 0.0455,
+                "mentionCount": 1
+              },
+              {
+                "name": "chatbot",
+                "type": "OTHER",
+                "salience": 0.0412,
+                "mentionCount": 1
+              },
+              {
+                "name": "answer",
+                "type": "OTHER",
+                "salience": 0.0362,
+                "mentionCount": 1
+              },
+              {
+                "name": "group",
+                "type": "ORGANIZATION",
+                "salience": 0.0361,
+                "mentionCount": 1
+              },
+              {
+                "name": "return",
+                "type": "OTHER",
+                "salience": 0.0282,
+                "mentionCount": 1
+              },
+              {
+                "name": "notice",
+                "type": "OTHER",
+                "salience": 0.0249,
+                "mentionCount": 1
+              },
+              {
+                "name": "refund",
+                "type": "OTHER",
+                "salience": 0.0174,
+                "mentionCount": 1
+              },
+              {
+                "name": "Money",
+                "type": "OTHER",
+                "salience": 0.0174,
+                "mentionCount": 1
+              }
+            ],
+            "provider": "google-cloud-natural-language"
+          }
+        },
+        {
+          "title": "ITR filing for AY 2026-27: 1.6 crore returns filed, 1.52 crore verified ahead of July 31 deadline",
+          "url": "https://www.financialexpress.com/money/income-tax/itr-filing-for-ay-2026-27-1-6-crore-returns-filed-152-crore-verified-ahead-of-july-31-deadline/4287408/",
+          "publishedAt": "2026-07-09T09:01:24.000Z",
+          "summary": "As filing momentum continues, taxpayers should remain equally focused on accuracy by carefully reconciling disclosures with Form 26AS, AIS and other tax records.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "language": "en",
+            "entities": [
+              {
+                "name": "filing",
+                "type": "WORK_OF_ART",
+                "salience": 0.359,
+                "mentionCount": 1
+              },
+              {
+                "name": "ITR",
+                "type": "ORGANIZATION",
+                "salience": 0.2254,
+                "mentionCount": 1
+              },
+              {
+                "name": "returns",
+                "type": "OTHER",
+                "salience": 0.1491,
+                "mentionCount": 1
+              },
+              {
+                "name": "momentum",
+                "type": "OTHER",
+                "salience": 0.0738,
+                "mentionCount": 1
+              },
+              {
+                "name": "taxpayers",
+                "type": "PERSON",
+                "salience": 0.0574,
+                "mentionCount": 1
+              },
+              {
+                "name": "26AS",
+                "type": "OTHER",
+                "salience": 0.0354,
+                "mentionCount": 1
+              },
+              {
+                "name": "tax records",
+                "type": "OTHER",
+                "salience": 0.0248,
+                "mentionCount": 1
+              },
+              {
+                "name": "Money",
+                "type": "OTHER",
+                "salience": 0.0247,
+                "mentionCount": 1
+              },
+              {
+                "name": "AIS",
+                "type": "ORGANIZATION",
+                "salience": 0.021,
+                "mentionCount": 1
+              },
+              {
+                "name": "accuracy",
+                "type": "OTHER",
+                "salience": 0.0156,
+                "mentionCount": 1
+              },
+              {
+                "name": "disclosures",
+                "type": "OTHER",
+                "salience": 0.0138,
+                "mentionCount": 1
+              }
+            ],
+            "provider": "google-cloud-natural-language"
+          }
+        },
+        {
+          "title": "Back to square one",
+          "url": "https://www.financialexpress.com/opinion/back-to-square-one-2/4286969/",
+          "publishedAt": "2026-07-08T18:32:21.000Z",
+          "summary": "Renewed West Asia tensions are a reminder that India’s best insurance lies in stronger investment &#038; job creation",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Opinion",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Back",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Renewed West Asia",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Opinion",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Claiming 80G deduction? Here's the new ITR disclosure requirement for taxpayers",
+          "url": "https://www.financialexpress.com/money/income-tax/claiming-80g-deduction-heres-the-new-itr-disclosure-requirement-for-taxpayers/4286782/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Claiming",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Here",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "ITR",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "'Aiming to double GWP to Rs 5,000 crore in three years': Alok Rungta, MD & CEO of Generali Central Life Insurance",
+          "url": "https://www.financialexpress.com/business/news/aiming-to-double-gwp-to-rs-5000-crore-in-three-years-alok-rungta-md-amp-ceo-of-generali-central-life-insurance/4283091/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Aiming",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "GWP",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Alok Rungta",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "CEO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Generali Central Life Insurance",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "‘Optimistic about healthcare-insurance integration’: Sarbvir Singh, Joint Group CEO, PB Fintech",
+          "url": "https://www.financialexpress.com/business/news/optimistic-about-healthcare-insurance-integration-sarbvir-singh-joint-group-ceo-pb-fintech/4282151/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "Business",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Optimistic",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Sarbvir Singh",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Joint Group CEO",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "PB Fintech. Open",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "E20 fuel and insurance claims: Can insurers reject your claim?",
+          "url": "https://www.financialexpress.com/money/insurance/e20-fuel-and-insurance-claims-can-insurers-reject-your-claim/4286637/",
           "publishedAt": null,
           "summary": "Open the full Financial Express story for complete details.",
           "sourceFeed": "https://www.financialexpress.com/money/",
@@ -1980,19 +2601,97 @@
             "language": "unknown",
             "entities": [
               {
-                "name": "Multi Cap",
+                "name": "Can",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Filing ITR-1? These 10 transactions may require you to switch to ITR-2 or ITR-3",
+          "url": "https://www.financialexpress.com/money/income-tax/filing-itr-1-these-10-transactions-may-require-you-to-switch-to-itr-2-or-itr-3/4286592/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/money/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "ITR-",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "Filing ITR-",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
               },
               {
-                "name": "Multi Asset Allocation Funds",
+                "name": "These",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Man skipped ITR filing, sentenced to 1-year jail 11 years later - why timely tax return filing matters",
+          "url": "https://www.financialexpress.com/money/man-skipped-itr-filing-sentenced-to-1-year-jail-11-years-later-why-timely-tax-return-filing-matters-4286559/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/money/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Man",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
               },
               {
-                "name": "Which",
+                "name": "ITR",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "The hidden cost of a debt-free home: When avoiding a loan hurts your finances more than interest?",
+          "url": "https://www.financialexpress.com/money/the-hidden-cost-of-a-debt-free-home-when-avoiding-a-loan-hurts-your-finances-more-than-interest-4286525/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/money/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "The",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "When",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
@@ -2356,531 +3055,6 @@
       ]
     },
     {
-      "id": "tax-money",
-      "name": "Tax Money",
-      "description": "Income tax, ITR, EPFO, savings, loans, insurance and money planning.",
-      "articleCount": 12,
-      "trendScore": 334,
-      "nlpEntities": [
-        "Chatbot",
-        "Real Cost",
-        "people",
-        "returns",
-        "Tax Return",
-        "filing",
-        "ITR",
-        "momentum",
-        "taxpayers",
-        "Back"
-      ],
-      "articles": [
-        {
-          "title": "The Real Cost of Letting a Chatbot Calculate Your Tax Return",
-          "url": "https://www.financialexpress.com/money/income-tax/the-real-cost-of-letting-a-chatbot-calculate-your-tax-return/4287470/",
-          "publishedAt": "2026-07-09T10:13:39.000Z",
-          "summary": "Countless returns have already been filed by people who simply trusted the chatbot's first answer. That group worries me most. A bad return doesn't announce itself on filing day. It surfaces months later as a notice or a missing refund.",
-          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
-          "sourceType": "wp-rest",
-          "section": "Money",
-          "categories": [],
-          "nlp": {
-            "language": "en",
-            "entities": [
-              {
-                "name": "Chatbot",
-                "type": "OTHER",
-                "salience": 0.433,
-                "mentionCount": 1
-              },
-              {
-                "name": "Real Cost",
-                "type": "OTHER",
-                "salience": 0.1649,
-                "mentionCount": 1
-              },
-              {
-                "name": "people",
-                "type": "PERSON",
-                "salience": 0.0897,
-                "mentionCount": 1
-              },
-              {
-                "name": "returns",
-                "type": "OTHER",
-                "salience": 0.0656,
-                "mentionCount": 1
-              },
-              {
-                "name": "Tax Return",
-                "type": "OTHER",
-                "salience": 0.0455,
-                "mentionCount": 1
-              },
-              {
-                "name": "chatbot",
-                "type": "OTHER",
-                "salience": 0.0412,
-                "mentionCount": 1
-              },
-              {
-                "name": "answer",
-                "type": "OTHER",
-                "salience": 0.0362,
-                "mentionCount": 1
-              },
-              {
-                "name": "group",
-                "type": "ORGANIZATION",
-                "salience": 0.0361,
-                "mentionCount": 1
-              },
-              {
-                "name": "return",
-                "type": "OTHER",
-                "salience": 0.0282,
-                "mentionCount": 1
-              },
-              {
-                "name": "notice",
-                "type": "OTHER",
-                "salience": 0.0249,
-                "mentionCount": 1
-              },
-              {
-                "name": "refund",
-                "type": "OTHER",
-                "salience": 0.0174,
-                "mentionCount": 1
-              },
-              {
-                "name": "Money",
-                "type": "OTHER",
-                "salience": 0.0174,
-                "mentionCount": 1
-              }
-            ],
-            "provider": "google-cloud-natural-language"
-          }
-        },
-        {
-          "title": "ITR filing for AY 2026-27: 1.6 crore returns filed, 1.52 crore verified ahead of July 31 deadline",
-          "url": "https://www.financialexpress.com/money/income-tax/itr-filing-for-ay-2026-27-1-6-crore-returns-filed-152-crore-verified-ahead-of-july-31-deadline/4287408/",
-          "publishedAt": "2026-07-09T09:01:24.000Z",
-          "summary": "As filing momentum continues, taxpayers should remain equally focused on accuracy by carefully reconciling disclosures with Form 26AS, AIS and other tax records.",
-          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
-          "sourceType": "wp-rest",
-          "section": "Money",
-          "categories": [],
-          "nlp": {
-            "language": "en",
-            "entities": [
-              {
-                "name": "filing",
-                "type": "WORK_OF_ART",
-                "salience": 0.359,
-                "mentionCount": 1
-              },
-              {
-                "name": "ITR",
-                "type": "ORGANIZATION",
-                "salience": 0.2254,
-                "mentionCount": 1
-              },
-              {
-                "name": "returns",
-                "type": "OTHER",
-                "salience": 0.1491,
-                "mentionCount": 1
-              },
-              {
-                "name": "momentum",
-                "type": "OTHER",
-                "salience": 0.0738,
-                "mentionCount": 1
-              },
-              {
-                "name": "taxpayers",
-                "type": "PERSON",
-                "salience": 0.0574,
-                "mentionCount": 1
-              },
-              {
-                "name": "26AS",
-                "type": "OTHER",
-                "salience": 0.0354,
-                "mentionCount": 1
-              },
-              {
-                "name": "tax records",
-                "type": "OTHER",
-                "salience": 0.0248,
-                "mentionCount": 1
-              },
-              {
-                "name": "Money",
-                "type": "OTHER",
-                "salience": 0.0247,
-                "mentionCount": 1
-              },
-              {
-                "name": "AIS",
-                "type": "ORGANIZATION",
-                "salience": 0.021,
-                "mentionCount": 1
-              },
-              {
-                "name": "accuracy",
-                "type": "OTHER",
-                "salience": 0.0156,
-                "mentionCount": 1
-              },
-              {
-                "name": "disclosures",
-                "type": "OTHER",
-                "salience": 0.0138,
-                "mentionCount": 1
-              }
-            ],
-            "provider": "google-cloud-natural-language"
-          }
-        },
-        {
-          "title": "Back to square one",
-          "url": "https://www.financialexpress.com/opinion/back-to-square-one-2/4286969/",
-          "publishedAt": "2026-07-08T18:32:21.000Z",
-          "summary": "Renewed West Asia tensions are a reminder that India’s best insurance lies in stronger investment &#038; job creation",
-          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
-          "sourceType": "wp-rest",
-          "section": "Opinion",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "Back",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Renewed West Asia",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "India",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Opinion",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "Claiming 80G deduction? Here's the new ITR disclosure requirement for taxpayers",
-          "url": "https://www.financialexpress.com/money/income-tax/claiming-80g-deduction-heres-the-new-itr-disclosure-requirement-for-taxpayers/4286782/",
-          "publishedAt": null,
-          "summary": "Open the full Financial Express story for complete details.",
-          "sourceFeed": "https://www.financialexpress.com/",
-          "sourceType": "html-page",
-          "section": "Money",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "Claiming",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Here",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "ITR",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "E20 fuel and insurance claims: Can insurers reject your claim?",
-          "url": "https://www.financialexpress.com/money/insurance/e20-fuel-and-insurance-claims-can-insurers-reject-your-claim/4286637/",
-          "publishedAt": null,
-          "summary": "Open the full Financial Express story for complete details.",
-          "sourceFeed": "https://www.financialexpress.com/",
-          "sourceType": "html-page",
-          "section": "Money",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "Can",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "Filing ITR-1? These 10 transactions may require you to switch to ITR-2 or ITR-3",
-          "url": "https://www.financialexpress.com/money/income-tax/filing-itr-1-these-10-transactions-may-require-you-to-switch-to-itr-2-or-itr-3/4286592/",
-          "publishedAt": null,
-          "summary": "Open the full Financial Express story for complete details.",
-          "sourceFeed": "https://www.financialexpress.com/",
-          "sourceType": "html-page",
-          "section": "Money",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "ITR-",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "Filing ITR-",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "These",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "'Aiming to double GWP to Rs 5,000 crore in three years': Alok Rungta, MD & CEO of Generali Central Life Insurance",
-          "url": "https://www.financialexpress.com/business/news/aiming-to-double-gwp-to-rs-5000-crore-in-three-years-alok-rungta-md-amp-ceo-of-generali-central-life-insurance/4283091/",
-          "publishedAt": null,
-          "summary": "Open the full Financial Express story for complete details.",
-          "sourceFeed": "https://www.financialexpress.com/",
-          "sourceType": "html-page",
-          "section": "Business",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "Aiming",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "GWP",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Alok Rungta",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "CEO",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Generali Central Life Insurance",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "‘Optimistic about healthcare-insurance integration’: Sarbvir Singh, Joint Group CEO, PB Fintech",
-          "url": "https://www.financialexpress.com/business/news/optimistic-about-healthcare-insurance-integration-sarbvir-singh-joint-group-ceo-pb-fintech/4282151/",
-          "publishedAt": null,
-          "summary": "Open the full Financial Express story for complete details.",
-          "sourceFeed": "https://www.financialexpress.com/",
-          "sourceType": "html-page",
-          "section": "Business",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "Optimistic",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Sarbvir Singh",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Joint Group CEO",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "PB Fintech. Open",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "Man skipped ITR filing, sentenced to 1-year jail 11 years later - why timely tax return filing matters",
-          "url": "https://www.financialexpress.com/money/man-skipped-itr-filing-sentenced-to-1-year-jail-11-years-later-why-timely-tax-return-filing-matters-4286559/",
-          "publishedAt": null,
-          "summary": "Open the full Financial Express story for complete details.",
-          "sourceFeed": "https://www.financialexpress.com/money/",
-          "sourceType": "html-page",
-          "section": "Money",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "Man",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "ITR",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "The hidden cost of a debt-free home: When avoiding a loan hurts your finances more than interest?",
-          "url": "https://www.financialexpress.com/money/the-hidden-cost-of-a-debt-free-home-when-avoiding-a-loan-hurts-your-finances-more-than-interest-4286525/",
-          "publishedAt": null,
-          "summary": "Open the full Financial Express story for complete details.",
-          "sourceFeed": "https://www.financialexpress.com/money/",
-          "sourceType": "html-page",
-          "section": "Money",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "The",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "When",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "ITR filing AY 2026-27: 10 transactions that appear in AIS but may not attract any tax",
-          "url": "https://www.financialexpress.com/money/income-tax/itr-filing-ay-2026-27-10-transactions-that-appear-in-ais-but-may-not-attract-any-tax/4285669/",
-          "publishedAt": null,
-          "summary": "Open the full Financial Express story for complete details.",
-          "sourceFeed": "https://www.financialexpress.com/money/",
-          "sourceType": "html-page",
-          "section": "Money",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "ITR",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "AIS",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "Man gets 23 flats from builder, seeks tax exemption on all units after Rs 8 crore LTCG demand; ITAT says this",
-          "url": "https://www.financialexpress.com/money/man-gets-23-flats-from-builder-seeks-tax-exemption-on-all-units-after-rs-8-crore-ltcg-demand-itat-says-this-4285404/",
-          "publishedAt": null,
-          "summary": "Open the full Financial Express story for complete details.",
-          "sourceFeed": "https://www.financialexpress.com/money/",
-          "sourceType": "html-page",
-          "section": "Money",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "Man",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "LTCG",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "ITAT",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
       "id": "defence-stocks",
       "name": "Defence Stocks",
       "description": "Recent stories on defence companies, orders, contracts and stock movement.",
@@ -3168,7 +3342,7 @@
       "name": "Global Markets",
       "description": "US markets, Fed, crude oil, dollar, China and global cues.",
       "articleCount": 7,
-      "trendScore": 207,
+      "trendScore": 203,
       "nlpEntities": [
         "IPO",
         "SK Hynix",
@@ -3379,50 +3553,44 @@
           }
         },
         {
-          "title": "India steps up diplomatic push with Iran to secure 9 tankers, 198 seafarers stuck in Hormuz: Report",
-          "url": "https://www.financialexpress.com/india-news/india-steps-up-diplomatic-push-with-iran-to-secure-9-tankers-198-seafarers-stuck-in-hormuz-report/4286794/",
-          "publishedAt": "2026-07-08T15:39:01.000Z",
-          "summary": "Before the conflict, the strait handled nearly 40% of India's crude oil shipments, around 60% of its LNG cargoes and close to 90% of its LPG supplies.",
-          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
-          "sourceType": "wp-rest",
-          "section": "India News",
+          "title": "LIVE:Iran-US war LIVE updates: Khamenei set to be buried today; US strike hit bridge on China-Iran rail corridor",
+          "url": "https://www.financialexpress.com/world-news/iran-us-war-live-updates-trump-military-actions-strait-of-hormuz-attack-oil-price-today-nato-summit/4286222/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/",
+          "sourceType": "html-page",
+          "section": "World News",
           "categories": [],
           "nlp": {
             "provider": "local-fallback",
             "language": "unknown",
             "entities": [
               {
-                "name": "India",
+                "name": "LIVE",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.16,
                 "mentionCount": 2
               },
               {
-                "name": "Iran",
+                "name": "Iran-US",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
               },
               {
-                "name": "Hormuz",
+                "name": "Khamenei",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
               },
               {
-                "name": "Report. Before",
+                "name": "China-Iran",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
               },
               {
-                "name": "LNG",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "LPG",
+                "name": "World News",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
@@ -3498,8 +3666,8 @@
       "id": "gold-rate",
       "name": "Gold Rate",
       "description": "Gold prices, bullion, MCX and commodity market movement.",
-      "articleCount": 4,
-      "trendScore": 202,
+      "articleCount": 3,
+      "trendScore": 181,
       "nlpEntities": [
         "July",
         "Gold",
@@ -3634,40 +3802,6 @@
               },
               {
                 "name": "Divi",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "Warren Buffett vs. Indian grandmothers: Who wins the great gold debate",
-          "url": "https://www.financialexpress.com/money/breakfast-with-buffett/warren-buffett-vs-indian-grandmothers-who-wins-the-great-gold-debate/4285089/",
-          "publishedAt": null,
-          "summary": "Open the full Financial Express story for complete details.",
-          "sourceFeed": "https://www.financialexpress.com/money/",
-          "sourceType": "html-page",
-          "section": "Money",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "Warren Buffett",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Indian",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Who",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
@@ -3906,134 +4040,6 @@
       ]
     },
     {
-      "id": "rbi-economy",
-      "name": "RBI Economy",
-      "description": "RBI policy, inflation, GDP, rate cuts, rupee and macro economy updates.",
-      "articleCount": 3,
-      "trendScore": 67,
-      "nlpEntities": [
-        "India-US",
-        "China",
-        "Economist Surjit Bhalla. Economist",
-        "Surjit Bhalla",
-        "India",
-        "Rupee",
-        "Policy",
-        "Parenting",
-        "Why"
-      ],
-      "articles": [
-        {
-          "title": "India-US trade deal can reshape economy, delay only benefits China: Economist Surjit Bhalla",
-          "url": "https://www.financialexpress.com/trending/india-us-trade-deal-can-reshape-economy-delay-only-benefits-chinanbspeconomist-surjit-bhalla/4286920/",
-          "publishedAt": "2026-07-08T17:05:00.000Z",
-          "summary": "Economist Surjit Bhalla believes an India-US trade agreement could significantly improve India's long-term growth, competitiveness and global standing.",
-          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
-          "sourceType": "wp-rest",
-          "section": "Trending",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "India-US",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "China",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Economist Surjit Bhalla. Economist",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Surjit Bhalla",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "India",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Trending",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "Rupee logs biggest monthly decline on higher oil prices",
-          "url": "https://www.financialexpress.com/policy/economy/rupee-logs-biggest-monthly-decline-on-higher-oil-prices/4286685/",
-          "publishedAt": null,
-          "summary": "Open the full Financial Express story for complete details.",
-          "sourceFeed": "https://www.financialexpress.com/",
-          "sourceType": "html-page",
-          "section": "Policy",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "Rupee",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Policy",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        },
-        {
-          "title": "Parenting inflation: Why raising children has become more expensive than ever",
-          "url": "https://www.financialexpress.com/money/parenting-inflation-why-raising-children-has-become-more-expensive-than-ever-4285699/",
-          "publishedAt": null,
-          "summary": "Open the full Financial Express story for complete details.",
-          "sourceFeed": "https://www.financialexpress.com/money/",
-          "sourceType": "html-page",
-          "section": "Money",
-          "categories": [],
-          "nlp": {
-            "provider": "local-fallback",
-            "language": "unknown",
-            "entities": [
-              {
-                "name": "Parenting",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              },
-              {
-                "name": "Why",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.08,
-                "mentionCount": 1
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
       "id": "silver-rate",
       "name": "Silver Rate",
       "description": "Silver prices, bullion, MCX and commodity market movement.",
@@ -4126,7 +4132,7 @@
         "Will",
         "June",
         "Results LIVE",
-        "All",
+        "Net",
         "Tata Consultancy Services"
       ],
       "articles": [
@@ -4195,10 +4201,10 @@
           }
         },
         {
-          "title": "TCS Q1FY27 Results LIVE: Will earnings beat street estimates? All eyes on deal pipeline, rupee impact",
+          "title": "TCS Q1FY27 Results LIVE: Net profit up 4.62%, deal wins at $9.5 billion & 9,279 employees added",
           "url": "https://www.financialexpress.com/business/industry-tcs-q1-fy27-results-live-updates-ai-deal-wins-revenue-growth-profit-rupee-depreciation-4286908/",
           "publishedAt": "2026-07-09T03:28:16.000Z",
-          "summary": "TCS Q1FY27 Results LIVE: Tata Consultancy Services is expected to report a subdued first quarter. Will TCS earnings beat estimates? Will the benefit from rupee depreciation be offset by AI-led pricing pressure and wage hikes?",
+          "summary": "TCS Q1FY27 Results LIVE: Tata Consultancy Services reported inline results in Q1. The company's margins are impacted due to wage hikes.",
           "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
           "sourceType": "wp-rest",
           "section": "Business",
@@ -4220,13 +4226,7 @@
                 "mentionCount": 2
               },
               {
-                "name": "Will",
-                "type": "LOCAL_KEYWORD",
-                "salience": 0.16,
-                "mentionCount": 2
-              },
-              {
-                "name": "All",
+                "name": "Net",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
@@ -4238,13 +4238,105 @@
                 "mentionCount": 1
               },
               {
-                "name": "Will TCS",
+                "name": "The",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "rbi-economy",
+      "name": "RBI Economy",
+      "description": "RBI policy, inflation, GDP, rate cuts, rupee and macro economy updates.",
+      "articleCount": 2,
+      "trendScore": 46,
+      "nlpEntities": [
+        "India-US",
+        "China",
+        "Economist Surjit Bhalla. Economist",
+        "Surjit Bhalla",
+        "India",
+        "Parenting",
+        "Why"
+      ],
+      "articles": [
+        {
+          "title": "India-US trade deal can reshape economy, delay only benefits China: Economist Surjit Bhalla",
+          "url": "https://www.financialexpress.com/trending/india-us-trade-deal-can-reshape-economy-delay-only-benefits-chinanbspeconomist-surjit-bhalla/4286920/",
+          "publishedAt": "2026-07-08T17:05:00.000Z",
+          "summary": "Economist Surjit Bhalla believes an India-US trade agreement could significantly improve India's long-term growth, competitiveness and global standing.",
+          "sourceFeed": "https://www.financialexpress.com/wp-json/wp/v2/posts?per_page=80&_fields=date,link,title,excerpt",
+          "sourceType": "wp-rest",
+          "section": "Trending",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "India-US",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.16,
+                "mentionCount": 2
+              },
+              {
+                "name": "China",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
               },
               {
-                "name": "AI-led",
+                "name": "Economist Surjit Bhalla. Economist",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Surjit Bhalla",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "India",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Trending",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              }
+            ]
+          }
+        },
+        {
+          "title": "Parenting inflation: Why raising children has become more expensive than ever",
+          "url": "https://www.financialexpress.com/money/parenting-inflation-why-raising-children-has-become-more-expensive-than-ever-4285699/",
+          "publishedAt": null,
+          "summary": "Open the full Financial Express story for complete details.",
+          "sourceFeed": "https://www.financialexpress.com/money/",
+          "sourceType": "html-page",
+          "section": "Money",
+          "categories": [],
+          "nlp": {
+            "provider": "local-fallback",
+            "language": "unknown",
+            "entities": [
+              {
+                "name": "Parenting",
+                "type": "LOCAL_KEYWORD",
+                "salience": 0.08,
+                "mentionCount": 1
+              },
+              {
+                "name": "Why",
                 "type": "LOCAL_KEYWORD",
                 "salience": 0.08,
                 "mentionCount": 1
