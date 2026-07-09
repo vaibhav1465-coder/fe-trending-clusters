@@ -2,8 +2,7 @@
 const path = require("path");
 const { loadEnv } = require("../lib/env-loader");
 
-// The export script runs outside server.js, so it must load .env itself.
-// This ensures cached Vercel data is also Google NLP enriched.
+// Load .env because this script runs outside server.js.
 loadEnv(path.join(__dirname, ".."));
 
 const { getTrendingData } = require("../api/trending-clusters");
